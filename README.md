@@ -7,7 +7,7 @@ RAG 청크 프롬프트 인젝션 탐지를 위한 **질의 불변성 검사(Que
 
 ## 시작하기
 ```bash
-python3.8 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env    # API 키 입력

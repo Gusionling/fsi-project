@@ -4,15 +4,13 @@ RAG 청크 하나를 서로 무관한 decoy 질의 여러 개로 반복 통과�
 설계의 기준 문서는 `docs/design.md`이다.
 
 ## 기술 제약
-- **Python 3.8**. 타입 힌트는 `typing`의 `List`, `Dict`, `Any`, `Optional`, `Tuple`을 쓴다.
-- 3.9+ 전용 문법/API 금지: `list[str]`, `dict[str, Any]`, `X | None`, `match`문, `str.removeprefix`, dict 병합 `|` 등.
-  (`tests/test_smoke.py`가 3.8 문법을 검사한다.)
+- **Python 3.10+** (개발 환경은 3.14). 타입 힌트는 `list[str]`, `dict[str, Any]`, `str | None` 형태의 내장 제네릭과 유니온 문법을 쓴다.
 - 전체가 LLM API 호출 + 순수 Python 로직이다. GPU, 파인튜닝, 로컬 모델은 쓰지 않는다.
 - 새 패키지를 추가하기 전에 먼저 묻는다.
 
 ## 명령어
 ```
-python3.8 -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env         # API 키 입력 (.env는 커밋 금지)
 pytest                       # 단위 테스트 (실제 API 호출 없음)
