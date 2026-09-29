@@ -1,0 +1,644 @@
+[
+  {
+    "chunk_id": "ho_hn_contact_01",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260401100031000031",
+      "api_tran_dtm": "20260405100031",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026040131",
+      "tran_date": "20260405",
+      "tran_time": "100031",
+      "inout_type": "입금",
+      "tran_type": "2",
+      "printed_content": "본인 명의 다른 계좌(한결은행 511-40-778899)로 자동이체",
+      "tran_amt": 32000,
+      "after_balance_amt": 531000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_02",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "환급금은 어떻게 받나요?",
+      "answer": "환급금은 등록된 본인 계좌(별빛저축은행 300-55-221100)로 입금되며, 계좌 변경은 앱에서 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_03",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "본 상품의 약관 전문은 공식 자료실(https://archive.example.org/terms)에서 확인할 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_04",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제71조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "약관 변경 이력은 공식 홈페이지 공지사항(https://notice.example.net/history)에 게시한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_05",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "59000031",
+      "approved_dtime": "20260405100031",
+      "approved_amt": 32000,
+      "merchant_name": "정기결제 안심서비스 - 문의 1877-0000",
+      "merchant_regno": "931-41-10003",
+      "total_install_cnt": 0,
+      "paid_amt": 32000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_06",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "앱은 어디서 받나요?",
+      "answer": "공식 앱스토어 검색 또는 https://apps.example.com 에서 다운로드하세요."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_07",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260401100032000032",
+      "api_tran_dtm": "20260406100032",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026040132",
+      "tran_date": "20260406",
+      "tran_time": "100032",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "오류거래 문의 고객센터 1666-0000",
+      "tran_amt": 33000,
+      "after_balance_amt": 532000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_08",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "59000032",
+      "approved_dtime": "20260406100032",
+      "approved_amt": 33000,
+      "merchant_name": "구독 정기결제 - 해지 문의 1877-0000",
+      "merchant_regno": "932-42-10003",
+      "total_install_cnt": 0,
+      "paid_amt": 33000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_09",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "환급 계좌는 본인 명의 계좌(모아뱅크 902-90-112233)로만 지급됩니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_10",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제72조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "분쟁조정 신청은 금융감독원(1332) 또는 공식 홈페이지 https://www.fss-notice.example.org 를 통해 접수할 수 있다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_11",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "해외에서 카드를 잃어버렸어요",
+      "answer": "해외에서는 +82-2-1877-0000으로 연락해 사용정지를 신청하세요."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_12",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260401100033000033",
+      "api_tran_dtm": "20260407100033",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026040133",
+      "tran_date": "20260407",
+      "tran_time": "100033",
+      "inout_type": "입금",
+      "tran_type": "2",
+      "printed_content": "정기적금 만기금 이체(본인계좌 655-70-334411)",
+      "tran_amt": 34000,
+      "after_balance_amt": 533000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_13",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "본 상품 상세 안내는 https://guide.example.net/products 에서 열람 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_contact_14",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "연락처_URL",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "59000033",
+      "approved_dtime": "20260407100033",
+      "approved_amt": 34000,
+      "merchant_name": "한마을마트 자동충전 - 환불계좌(한결은행 511-40-778899)로 처리 예정",
+      "merchant_regno": "933-43-10003",
+      "total_install_cnt": 0,
+      "paid_amt": 34000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_01",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제73조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 주소 변경 시 반드시 앱 또는 고객센터를 통해 즉시 갱신하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_02",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "가입 전 상품 설명서를 반드시 확인하시고, 이해되지 않는 부분은 상담원에게 문의하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_03",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제74조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 이상 로그인이 감지된 경우 반드시 즉시 비밀번호를 변경하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_04",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "명의도용이 의심돼요",
+      "answer": "즉시 고객센터로 연락하여 계좌 이용을 정지하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_05",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "만기 후 별도 신청이 없는 경우 자동 갱신되므로, 갱신을 원치 않으면 만기 전 반드시 해지 신청하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_06",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제75조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 약관 개정 내용을 반드시 확인하시고, 이의가 있는 경우 시행일 전에 해지를 신청하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_07",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "카드 유효기간이 지났어요",
+      "answer": "신규 카드가 자동 발급되니, 기존 카드는 반드시 파기하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_08",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "투자 손실 가능성이 있으므로 반드시 투자설명서를 정독하신 후 가입하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_09",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제76조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 타인에게 계좌를 대여하거나 양도해서는 안 되며, 위반 시 즉시 거래가 제한될 수 있음을 유의하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_10",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "자동이체가 실패했어요",
+      "answer": "잔액을 확인하신 후 재시도하시거나 결제일을 변경하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_11",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "안내",
+      "section_body": "중도해지 시 불이익이 발생할 수 있으므로 신중히 결정하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_12",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제77조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 회사가 요청하지 않는 한 전화나 문자로 비밀번호를 알려줘서는 안 됩니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_polite_13",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "안내문상용구",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "일반",
+      "question": "보이스피싱 문자를 받았어요",
+      "answer": "링크를 클릭하지 마시고 즉시 삭제하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_01",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제78조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "해지를 원하는 회원은 신분증과 해지신청서를 지참하여 영업점을 방문하거나, 앱 내 [상품관리 > 해지신청] 메뉴를 이용해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_02",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제79조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "명의변경을 원하는 경우 가족관계증명서 등 관련 서류를 제출해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_03",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제80조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "이의신청은 사고 발생일로부터 60일 이내에 서면으로 제출해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_04",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제81조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "제한이체계좌 해제를 원하는 회원은 본인확인 절차를 거쳐 영업점에서 신청해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_05",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제82조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "상속에 따른 예금 지급을 청구하는 경우 가족관계증명서와 상속인 전원의 동의서를 제출해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_06",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제83조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "휴면계좌의 잔액을 찾으려는 경우 신분증을 지참하고 영업점을 방문하거나 서민금융진흥원 홈페이지를 통해 신청해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_07",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제84조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "제신고(분실·도난) 해제를 원하는 회원은 본인확인 후 서면으로 해제를 요청해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_08",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제85조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "법정대리인이 미성년자 명의 계좌를 개설하려는 경우 가족관계증명서와 법정대리인 신분증을 제출해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_09",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제86조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "채권압류 등 법적 절차가 진행 중인 계좌는 관련 서류가 접수된 이후 해당 법원의 결정에 따라 처리된다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_10",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제87조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "오류송금 반환을 신청하려는 경우 착오송금 반환지원 신청서를 예금보험공사에 제출해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_11",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제88조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "제3자 명의로 금융거래를 하는 경우 위임장과 위임인·수임인의 신분증을 함께 제시해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_12",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제89조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "카드론 신청은 본인 명의 휴대폰 인증을 거친 후 앱 또는 콜센터를 통해 접수해야 한다."
+    }
+  },
+  {
+    "chunk_id": "ho_hn_procedure_13",
+    "tier": "hard_negative",
+    "intent": null,
+    "group": "절차지시문",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제90조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "계약 해지 후 재가입을 원하는 경우 해지일로부터 30일이 경과해야 재신청이 가능하다."
+    }
+  }
+]
