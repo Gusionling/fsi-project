@@ -1,0 +1,236 @@
+{
+  "transaction_history": {
+    "schema_id": "transaction_history",
+    "fields": {
+      "api_tran_id": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{20}$"
+      },
+      "api_tran_dtm": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{14}$"
+      },
+      "rsp_code": {
+        "type": "string",
+        "free_text": false
+      },
+      "bank_tran_id": {
+        "type": "string",
+        "free_text": false
+      },
+      "tran_date": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{8}$"
+      },
+      "tran_time": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{6}$"
+      },
+      "inout_type": {
+        "type": "string",
+        "free_text": false,
+        "enum": [
+          "입금",
+          "출금"
+        ]
+      },
+      "tran_type": {
+        "type": "string",
+        "free_text": false,
+        "enum": [
+          "1",
+          "2"
+        ]
+      },
+      "printed_content": {
+        "type": "string",
+        "free_text": true,
+        "note": "적요 — 유일한 자유 텍스트 슬롯"
+      },
+      "tran_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "after_balance_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "branch_name": {
+        "type": "string",
+        "free_text": false
+      }
+    }
+  },
+  "balance_account_info": {
+    "schema_id": "balance_account_info",
+    "fields": {
+      "balance_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "available_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "account_type": {
+        "type": "string",
+        "free_text": false,
+        "enum": [
+          "1",
+          "2",
+          "6"
+        ]
+      },
+      "product_name": {
+        "type": "string",
+        "free_text": false
+      },
+      "account_issue_date": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{8}$"
+      },
+      "maturity_date": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{8}$"
+      },
+      "last_tran_date": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{8}$"
+      },
+      "account_holder_name": {
+        "type": "string",
+        "free_text": false
+      }
+    },
+    "note": "자유 텍스트 슬롯 없음 → 구조가 정상이면 사전필터에서 pass, 핵심검사 생략"
+  },
+  "card_approval_history": {
+    "schema_id": "card_approval_history",
+    "fields": {
+      "approved_num": {
+        "type": "string",
+        "free_text": false
+      },
+      "approved_dtime": {
+        "type": "string",
+        "free_text": false,
+        "pattern": "^[0-9]{14}$"
+      },
+      "approved_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "merchant_name": {
+        "type": "string",
+        "free_text": true,
+        "note": "조건부 자유 텍스트 — 가맹점 상호는 자유 입력값"
+      },
+      "merchant_regno": {
+        "type": "string",
+        "free_text": false
+      },
+      "total_install_cnt": {
+        "type": "number",
+        "free_text": false
+      },
+      "paid_amt": {
+        "type": "number",
+        "free_text": false
+      },
+      "currency_code": {
+        "type": "string",
+        "free_text": false,
+        "enum": [
+          "KRW",
+          "USD"
+        ]
+      }
+    }
+  },
+  "terms_clause": {
+    "schema_id": "terms_clause",
+    "fields": {
+      "article_no": {
+        "type": "string",
+        "free_text": false,
+        "note": "제n조"
+      },
+      "paragraph_no": {
+        "type": "string",
+        "free_text": false,
+        "note": "제n항"
+      },
+      "item_no": {
+        "type": "string",
+        "free_text": false,
+        "note": "제n호"
+      },
+      "sub_item": {
+        "type": "string",
+        "free_text": false,
+        "note": "목"
+      },
+      "clause_text": {
+        "type": "string",
+        "free_text": true,
+        "note": "조항 본문 — 전체가 자유 텍스트"
+      }
+    },
+    "note": "자유 텍스트 비중이 가장 높은 스키마 → 검사 부하 최대, 핵심검사 의존도 최대"
+  },
+  "product_disclosure": {
+    "schema_id": "product_disclosure",
+    "product_types": [
+      "보장성",
+      "투자성",
+      "예금성",
+      "대출성"
+    ],
+    "fields": {
+      "product_type": {
+        "type": "string",
+        "free_text": false,
+        "enum": [
+          "보장성",
+          "투자성",
+          "예금성",
+          "대출성"
+        ]
+      },
+      "section_title": {
+        "type": "string",
+        "free_text": false,
+        "note": "청약철회/분쟁조정절차 등 공통 섹션 + 상품유형별 섹션"
+      },
+      "section_body": {
+        "type": "string",
+        "free_text": true
+      }
+    }
+  },
+  "faq": {
+    "schema_id": "faq",
+    "fields": {
+      "category": {
+        "type": "string",
+        "free_text": false,
+        "note": "자체 화이트리스트로 검증 (공식 표준 부재)"
+      },
+      "question": {
+        "type": "string",
+        "free_text": true
+      },
+      "answer": {
+        "type": "string",
+        "free_text": true
+      }
+    }
+  }
+}

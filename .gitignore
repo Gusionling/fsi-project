@@ -1,0 +1,20 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 실행 산출물
+logs/*
+!logs/.gitkeep
+.llm_cache/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
