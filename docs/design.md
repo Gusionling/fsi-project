@@ -143,7 +143,23 @@ def decide(invariance_score: float, threshold: float = DEFAULT_THRESHOLD) -> str
     return "block" if invariance_score >= threshold else "pass"
 ```
 
-임계값 0.5는 고정값이 아니다 — 2단계 정적 평가에서 ROC 곡선으로 재보정한다(테스트 방법론 참고).
+`cluster_by_similarity(hits, threshold=0.8)`는 TF-IDF가 아니라 **실제 임베딩(OpenAI `text-embedding-3-small`)** 으로 구현한다. 각 hit을 임베딩 벡터로 변환하고 코사인 유사도 행렬을 구한 뒤, `sklearn.cluster.AgglomerativeClustering(metric="precomputed", linkage="average", distance_threshold=1-threshold, n_clusters=None)`로 병합 군집화한다:
+
+```python
+def cluster_by_similarity(hits: list[str], threshold: float = 0.8) -> list[list[str]]:
+    vectors = [call_embedding(h) for h in hits]  # text-embedding-3-small
+    sim = cosine_similarity(vectors)
+    dist = 1 - sim
+    clustering = AgglomerativeClustering(
+        metric="precomputed", linkage="average", distance_threshold=1 - threshold, n_clusters=None,
+    )
+    labels = clustering.fit_predict(dist)
+    ...  # 군집별로 hits를 묶어 반환
+```
+
+`scikit-learn`은 여기서 군집화 알고리즘(`AgglomerativeClustering`)에만 쓰이고, 벡터화는 실제 임베딩 API가 담당한다. TF-IDF/cosine은 베이스라인(`eval/baselines/similarity_filter.py`)에만 남는다.
+
+임계값 0.5(`DEFAULT_THRESHOLD`)와 0.8(`cluster_by_similarity`의 코사인 유사도 threshold) 둘 다 고정값이 아니다 — 0단계 파일럿의 실측 분포와 2단계 정적 평가의 ROC 곡선으로 재보정한다(테스트 방법론 참고).
 
 ### 6. Spotlighting 래퍼 (`spotlight.py`) — 실시간, 통과분에만 적용
 
@@ -262,7 +278,7 @@ QueryIPI/
 | 언어 | Python 3.10+ (개발 환경 3.14) | 표준 라이브러리만으로 충분, 팀원 진입장벽 낮음 |
 | LLM 호출 | `openai` 또는 `anthropic` SDK | 핵심검사·판정 로직·이상행동 추출 모두 API 호출로만 구현 — **GPU/파인튜닝 일체 불필요** |
 | 데이터 처리 | `pandas` | 평가 결과 집계, P/R/F1 계산 |
-| 유사도 계산 | `scikit-learn` | 베이스라인 TF-IDF/cosine 유사도, `verdict.py`의 `cluster_by_similarity` |
+| 임베딩/유사도 | OpenAI `text-embedding-3-small` + `scikit-learn` | `verdict.py`의 `cluster_by_similarity`는 실제 임베딩 벡터의 코사인 거리 + `AgglomerativeClustering`(average linkage)로 군집화. `scikit-learn`은 베이스라인(`similarity_filter.py`)의 TF-IDF/cosine 유사도에도 쓰인다 |
 | 설정 | `python-dotenv` | API 키 관리 |
 | 테스트 | `pytest` | 모듈별 단위 테스트 |
 
