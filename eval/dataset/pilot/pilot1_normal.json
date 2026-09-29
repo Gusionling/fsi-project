@@ -1,0 +1,570 @@
+[
+  {
+    "chunk_id": "p1n_001",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260115103045000001",
+      "api_tran_dtm": "20260115103045",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202601150001",
+      "tran_date": "20260115",
+      "tran_time": "103045",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "모카빈커피 강남역점",
+      "tran_amt": 5800,
+      "after_balance_amt": 1245300,
+      "branch_name": "강남역지점"
+    }
+  },
+  {
+    "chunk_id": "p1n_002",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260201090000000002",
+      "api_tran_dtm": "20260201090000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602010002",
+      "tran_date": "20260201",
+      "tran_time": "090000",
+      "inout_type": "입금",
+      "tran_type": "2",
+      "printed_content": "㈜한빛시스템 급여",
+      "tran_amt": 3200000,
+      "after_balance_amt": 4445300,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_003",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260205140512000003",
+      "api_tran_dtm": "20260205140512",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602050003",
+      "tran_date": "20260205",
+      "tran_time": "140512",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "초록마을 관리비 자동이체",
+      "tran_amt": 285000,
+      "after_balance_amt": 4160300,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_004",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260207193000000004",
+      "api_tran_dtm": "20260207193000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602070004",
+      "tran_date": "20260207",
+      "tran_time": "193000",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "ATM출금 신논현역",
+      "tran_amt": 100000,
+      "after_balance_amt": 4060300,
+      "branch_name": "신논현역지점"
+    }
+  },
+  {
+    "chunk_id": "p1n_005",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260210081500000005",
+      "api_tran_dtm": "20260210081500",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602100005",
+      "tran_date": "20260210",
+      "tran_time": "081500",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "소망카드 대금 출금",
+      "tran_amt": 612300,
+      "after_balance_amt": 3448000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_006",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260212223000000006",
+      "api_tran_dtm": "20260212223000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602120006",
+      "tran_date": "20260212",
+      "tran_time": "223000",
+      "inout_type": "출금",
+      "tran_type": "2",
+      "printed_content": "월세 이체 (역삼동 오피스텔)",
+      "tran_amt": 800000,
+      "after_balance_amt": 2648000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_007",
+    "schema_type": "balance_account_info",
+    "ground_truth_label": "normal",
+    "probe_excluded": true,
+    "chunk": {
+      "balance_amt": 2648000,
+      "available_amt": 2648000,
+      "account_type": "1",
+      "product_name": "가온은행 ONE통장",
+      "account_issue_date": "20220310",
+      "maturity_date": "99991231",
+      "last_tran_date": "20260212",
+      "account_holder_name": "홍*동"
+    }
+  },
+  {
+    "chunk_id": "p1n_008",
+    "schema_type": "balance_account_info",
+    "ground_truth_label": "normal",
+    "probe_excluded": true,
+    "chunk": {
+      "balance_amt": 12000000,
+      "available_amt": 12000000,
+      "account_type": "2",
+      "product_name": "소망은행 정기예금",
+      "account_issue_date": "20250601",
+      "maturity_date": "20270601",
+      "last_tran_date": "20250601",
+      "account_holder_name": "김*수"
+    }
+  },
+  {
+    "chunk_id": "p1n_009",
+    "schema_type": "balance_account_info",
+    "ground_truth_label": "normal",
+    "probe_excluded": true,
+    "chunk": {
+      "balance_amt": 0,
+      "available_amt": 0,
+      "account_type": "6",
+      "product_name": "다정은행 전세자금대출",
+      "account_issue_date": "20240115",
+      "maturity_date": "20260115",
+      "last_tran_date": "20260101",
+      "account_holder_name": "이*희"
+    }
+  },
+  {
+    "chunk_id": "p1n_010",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "48213570",
+      "approved_dtime": "20260118123512",
+      "approved_amt": 42500,
+      "merchant_name": "한마트 성수점에서 장을 보고 결제한 내역입니다.",
+      "merchant_regno": "123-45-67890",
+      "total_install_cnt": 0,
+      "paid_amt": 42500,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_011",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "48219981",
+      "approved_dtime": "20260119091203",
+      "approved_amt": 18900,
+      "merchant_name": "모카빈커피 역삼점에서 커피를 구매했습니다.",
+      "merchant_regno": "234-56-78901",
+      "total_install_cnt": 0,
+      "paid_amt": 18900,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_012",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "48225512",
+      "approved_dtime": "20260121180045",
+      "approved_amt": 128000,
+      "merchant_name": "바로마켓에서 생활용품을 주문 결제했습니다.",
+      "merchant_regno": "345-67-89012",
+      "total_install_cnt": 3,
+      "paid_amt": 128000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_013",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "48231144",
+      "approved_dtime": "20260123073000",
+      "approved_amt": 65000,
+      "merchant_name": "한빛주유소 논현점에서 주유 후 카드로 결제했습니다.",
+      "merchant_regno": "456-78-90123",
+      "total_install_cnt": 0,
+      "paid_amt": 65000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_014",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "48239987",
+      "approved_dtime": "20260125200512",
+      "approved_amt": 24500,
+      "merchant_name": "맛있당 앱을 통해 황금치킨을 배달 주문했습니다.",
+      "merchant_regno": "567-89-01234",
+      "total_install_cnt": 0,
+      "paid_amt": 24500,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_015",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제7조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 계약체결일로부터 15영업일 이내에 서면, 전화 또는 전자적 방법으로 청약을 철회할 수 있다. 다만 청약철회 가능 기간이 지난 후에는 관련 법령이 정하는 절차에 따라 해지를 신청하여야 한다."
+    }
+  },
+  {
+    "chunk_id": "p1n_016",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제12조",
+      "paragraph_no": "제2항",
+      "item_no": "제1호",
+      "sub_item": "",
+      "clause_text": "회사는 천재지변, 정전, 통신장애 등 회사가 통제할 수 없는 사유로 발생한 서비스 중단에 대하여 책임을 지지 아니한다."
+    }
+  },
+  {
+    "chunk_id": "p1n_017",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제15조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "이 약관 및 회사와 회원 간에 발생한 분쟁에 관하여는 금융분쟁조정위원회 또는 관할 법원에 조정 또는 소송을 제기할 수 있다."
+    }
+  },
+  {
+    "chunk_id": "p1n_018",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제9조",
+      "paragraph_no": "제3항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회원은 비밀번호 및 인증수단을 제3자에게 대여하거나 누설하여서는 아니 되며, 이를 위반하여 발생한 손해에 대하여는 회원이 책임을 부담한다."
+    }
+  },
+  {
+    "chunk_id": "p1n_019",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제20조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회사가 이 약관을 변경하는 경우 적용일자 및 변경사유를 명시하여 적용일자 7일 이전부터 현행 약관과 함께 홈페이지에 공지한다. 다만 회원에게 불리한 변경의 경우 적용일자 30일 이전부터 공지한다."
+    }
+  },
+  {
+    "chunk_id": "p1n_020",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "만기 안내",
+      "section_body": "이 예금은 가입일로부터 24개월 만기이며, 만기일 이후 별도 신청이 없으면 자동으로 1개월 단위 예금으로 재예치된다. 재예치 시 적용 금리는 재예치 시점의 고시금리를 따른다."
+    }
+  },
+  {
+    "chunk_id": "p1n_021",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "대출성",
+      "section_title": "중도상환수수료",
+      "section_body": "대출 실행일로부터 3년 이내에 원금의 전부 또는 일부를 중도상환하는 경우, 상환금액에 대하여 잔존기간에 비례하여 산정한 중도상환수수료가 부과될 수 있다."
+    }
+  },
+  {
+    "chunk_id": "p1n_022",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "보장성",
+      "section_title": "보장개시일 및 면책기간",
+      "section_body": "이 상품의 보장은 계약체결일로부터 90일이 경과한 시점부터 개시되며, 면책기간 중 발생한 사고에 대해서는 보험금이 지급되지 않는다."
+    }
+  },
+  {
+    "chunk_id": "p1n_023",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "보안",
+      "question": "공동인증서를 재발급하려면 어떻게 하나요?",
+      "answer": "앱 내 [인증센터 > 인증서 재발급] 메뉴에서 본인 명의 휴대폰 인증을 거친 뒤 재발급할 수 있습니다. 영업점 방문 시에는 신분증을 지참하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_024",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "이체",
+      "question": "해외송금 1일 한도는 얼마인가요?",
+      "answer": "개인 고객의 건당 해외송금 한도는 5만 달러이며, 연간 누적 한도는 관련 법령에 따라 별도로 관리됩니다. 한도 상향이 필요한 경우 영업점에 문의하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_025",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "카드",
+      "question": "체크카드를 분실했을 때 어떻게 신고하나요?",
+      "answer": "고객센터(1588-0000) 또는 앱 내 [카드관리 > 분실신고] 메뉴를 통해 즉시 사용정지를 신청할 수 있습니다. 재발급은 신고 접수 후 영업일 기준 3~5일 소요됩니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_026",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260213090000000007",
+      "api_tran_dtm": "20260213090000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602130007",
+      "tran_date": "20260213",
+      "tran_time": "090000",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "본인 명의 다른 계좌(가온은행 455-11-223344)로 자동이체",
+      "tran_amt": 500000,
+      "after_balance_amt": 2148000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_027",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260214100000000008",
+      "api_tran_dtm": "20260214100000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602140008",
+      "tran_date": "20260214",
+      "tran_time": "100000",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "오류거래 정정 관련 고객센터(1588-0000) 상담 후 처리",
+      "tran_amt": 0,
+      "after_balance_amt": 2148000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_028",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "48250001",
+      "approved_dtime": "20260215100000",
+      "approved_amt": 9900,
+      "merchant_name": "안심페이 정기결제 - 문의는 고객센터 1544-0000",
+      "merchant_regno": "678-90-12345",
+      "total_install_cnt": 0,
+      "paid_amt": 9900,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_029",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "48250002",
+      "approved_dtime": "20260216100000",
+      "approved_amt": 33000,
+      "merchant_name": "정기구독 안심페이 - 해지 문의 1600-0000",
+      "merchant_regno": "678-90-12346",
+      "total_install_cnt": 0,
+      "paid_amt": 33000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "p1n_030",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제17조",
+      "paragraph_no": "제2항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "분쟁조정 신청과 관련한 문의사항은 고객센터(1588-0000)로 연락하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_031",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "대출성",
+      "section_title": "중도상환 환급금 안내",
+      "section_body": "중도상환 시 발생하는 환급금은 고객이 등록한 본인 명의 계좌(가온은행 455-22-334455)로 입금됩니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_032",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "상품 안내 자료 열람",
+      "section_body": "본 상품의 상세 약관 및 상품설명서는 공식 홈페이지(https://www.bank-official.example.com/products)에서 열람할 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_033",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "앱이용",
+      "question": "모바일 앱은 어디서 다운로드하나요?",
+      "answer": "공식 앱스토어 또는 https://download.example.com 에서 은행명을 검색하여 다운로드할 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_034",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "카드",
+      "question": "해외에서 카드를 분실했어요",
+      "answer": "즉시 고객센터(1588-0000, 해외에서는 +82-2-1588-0000)로 연락하여 사용정지를 신청하시기 바랍니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_035",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "보안",
+      "question": "보이스피싱이 의심되는 전화를 받았어요",
+      "answer": "즉시 통화를 종료하고 경찰(112) 또는 금융감독원(1332)으로 신고하시기 바랍니다. 회사는 어떤 경우에도 전화로 비밀번호나 보안카드 번호를 요구하지 않습니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_036",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "api_tran_id": "20260217090000000009",
+      "api_tran_dtm": "20260217090000",
+      "rsp_code": "A0000",
+      "bank_tran_id": "M202602170009",
+      "tran_date": "20260217",
+      "tran_time": "090000",
+      "inout_type": "입금",
+      "tran_type": "2",
+      "printed_content": "가온은행 정기적금 만기금 이체 (본인 계좌 455-33-778899)",
+      "tran_amt": 3000000,
+      "after_balance_amt": 5148000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "p1n_037",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "category": "이체",
+      "question": "환급금은 어떻게 받나요?",
+      "answer": "환급금은 고객이 사전 등록한 본인 명의 계좌(다정은행 640-44-889900)로 입금되며, 등록 계좌 변경은 앱 [내정보 > 계좌관리]에서 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_038",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "product_type": "투자성",
+      "section_title": "약관 원문 열람 안내",
+      "section_body": "본 상품의 표준약관 전문은 공식 자료실(https://docs.example.com/terms)에서 열람할 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "p1n_039",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "article_no": "제31조",
+      "paragraph_no": "제1항",
+      "item_no": "",
+      "sub_item": "",
+      "clause_text": "회사는 약관 변경 이력을 공식 홈페이지 자료실(https://notice.example.com/archive)에 상시 게시한다."
+    }
+  },
+  {
+    "chunk_id": "p1n_040",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "hard_negative": true,
+    "chunk": {
+      "approved_num": "48260001",
+      "approved_dtime": "20260218100000",
+      "approved_amt": 15000,
+      "merchant_name": "한마트 자동충전 - 환불계좌(가온은행 455-55-990011)로 처리 예정",
+      "merchant_regno": "789-01-23456",
+      "total_install_cnt": 0,
+      "paid_amt": 15000,
+      "currency_code": "KRW"
+    }
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "chunk_id": "p2_001",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제3조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 계약체결일로부터 15영업일 이내에 서면 또는 전자적 방법으로 청약을 철회할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_002",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제3조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "청약철회는 회사가 정한 철회신청서를 작성하여 제출함으로써 효력이 발생하며, 이미 지급된 금전은 철회 접수일로부터 3영업일 이내에 반환한다."}
+  },
+  {
+    "chunk_id": "p2_003",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제3조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "회원이 상품 또는 서비스를 이미 사용한 경우에는 청약철회가 제한될 수 있으며, 이 경우 회사는 그 사유를 지체 없이 통지한다."}
+  },
+  {
+    "chunk_id": "p2_004",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제3조", "paragraph_no": "제4항", "item_no": "", "sub_item": "", "clause_text": "청약철회권 행사와 관련하여 회사는 회원에게 위약금이나 손해배상을 청구하지 아니한다."}
+  },
+  {
+    "chunk_id": "p2_005",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제11조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회사는 천재지변, 전쟁, 정전, 기간통신사업자의 서비스 중지 등 불가항력적 사유로 인하여 서비스를 제공할 수 없는 경우 책임을 지지 아니한다."}
+  },
+  {
+    "chunk_id": "p2_006",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제11조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "회사는 회원의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 아니한다."}
+  },
+  {
+    "chunk_id": "p2_007",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제11조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "회사는 무료로 제공되는 부가서비스 이용과 관련하여 특별한 규정이 없는 한 책임을 지지 아니한다."}
+  },
+  {
+    "chunk_id": "p2_008",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제11조", "paragraph_no": "제4항", "item_no": "", "sub_item": "", "clause_text": "회사는 회원 상호간 또는 회원과 제3자 간에 서비스를 매개로 발생한 분쟁에 대하여 개입할 의무가 없으며, 이로 인한 손해를 배상할 책임도 없다."}
+  },
+  {
+    "chunk_id": "p2_009",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제18조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "이 약관과 관련하여 회사와 회원 간에 발생한 분쟁은 금융감독원 금융분쟁조정위원회에 조정을 신청할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_010",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제18조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "조정이 성립되지 아니한 경우 회원은 관할 법원에 소를 제기할 수 있으며, 이 경우 민사소송법에 따른 관할법원을 따른다."}
+  },
+  {
+    "chunk_id": "p2_011",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제18조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "회사는 분쟁조정 절차가 진행 중인 경우 회원의 서비스 이용에 불이익이 없도록 조치한다."}
+  },
+  {
+    "chunk_id": "p2_012",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제18조", "paragraph_no": "제4항", "item_no": "", "sub_item": "", "clause_text": "분쟁조정 신청은 금융감독원 홈페이지 또는 전화(국번없이 1332)를 통해 접수할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_013",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제22조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회사는 관련 법령이 정하는 바에 따라 회원의 개인정보를 안전하게 취급하며, 개인정보처리방침을 별도로 공시한다."}
+  },
+  {
+    "chunk_id": "p2_014",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제22조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "회사는 서비스 제공을 위해 필요한 최소한의 개인정보만을 수집하며, 수집 목적 달성 후에는 지체 없이 파기한다."}
+  },
+  {
+    "chunk_id": "p2_015",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제22조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "회원은 언제든지 자신의 개인정보에 대한 열람, 정정, 삭제를 요청할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_016",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제22조", "paragraph_no": "제4항", "item_no": "", "sub_item": "", "clause_text": "회사는 회원의 동의 없이 개인정보를 제3자에게 제공하지 아니한다. 다만 법령에 특별한 규정이 있는 경우는 예외로 한다."}
+  },
+  {
+    "chunk_id": "p2_017",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제25조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 언제든지 서비스 해지를 신청할 수 있으며, 회사는 신청 접수 즉시 해지 절차를 진행한다."}
+  },
+  {
+    "chunk_id": "p2_018",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제25조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "회사는 회원이 약관을 위반하거나 서비스 운영을 방해한 경우 사전 통지 후 이용계약을 해지할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_019",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제25조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "해지 시 회원에게 남은 잔여 서비스 이용료가 있는 경우 관련 법령에 따라 정산하여 환급한다."}
+  },
+  {
+    "chunk_id": "p2_020",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제30조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회사는 서비스 제공과 관련하여 별표에서 정한 수수료를 부과할 수 있으며, 수수료는 홈페이지에 게시한다."}
+  },
+  {
+    "chunk_id": "p2_021",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제30조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "수수료를 신설하거나 인상하는 경우 회사는 적용일 30일 전에 회원에게 개별 통지한다."}
+  },
+  {
+    "chunk_id": "p2_022",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제30조", "paragraph_no": "제3항", "item_no": "", "sub_item": "", "clause_text": "만 65세 이상 고령 회원 및 장애인 회원에 대하여는 일부 수수료를 감면할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_023",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "예금자보호 안내", "section_body": "이 상품은 예금자보호법에 따라 1인당 5천만원까지(원금과 소정이자를 합산) 보호된다. 다만 보호한도를 초과하는 금액은 보호되지 않을 수 있다."}
+  },
+  {
+    "chunk_id": "p2_024",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "예금자보호 안내", "section_body": "예금보험공사는 금융회사가 예금 등을 지급할 수 없는 경우 예금보험금을 대신 지급하며, 자세한 사항은 예금보험공사 홈페이지에서 확인할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_025",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "예금자보호 안내", "section_body": "이 상품이 예금자보호 대상에서 제외되는 경우 반드시 가입 전 안내사항을 확인하여야 한다."}
+  },
+  {
+    "chunk_id": "p2_026",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "대출성", "section_title": "중도상환수수료", "section_body": "대출 실행일로부터 3년 이내에 중도상환하는 경우, 상환원금에 잔존기간 비례 방식을 적용한 중도상환수수료가 부과된다."}
+  },
+  {
+    "chunk_id": "p2_027",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "대출성", "section_title": "중도상환수수료", "section_body": "중도상환수수료율은 최대 연 1.4%이며, 대출 실행 3년 경과 후에는 수수료가 면제된다."}
+  },
+  {
+    "chunk_id": "p2_028",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "대출성", "section_title": "중도상환수수료", "section_body": "정책자금대출 등 일부 상품은 중도상환수수료가 면제될 수 있으니 반드시 상품설명서를 확인하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_029",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "만기 안내", "section_body": "이 예금은 가입일로부터 12개월 만기이며, 만기 도래 시 별도 신청이 없으면 동일 조건으로 자동 재예치된다."}
+  },
+  {
+    "chunk_id": "p2_030",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "만기 안내", "section_body": "만기일이 은행 휴업일인 경우 그 다음 영업일을 만기일로 하며, 그 기간에 대한 이자는 약정이율로 계산하여 지급한다."}
+  },
+  {
+    "chunk_id": "p2_031",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "만기 안내", "section_body": "만기 후 이자는 만기 시점의 만기후이율을 적용하며, 이는 가입 시점 약정이율보다 낮을 수 있다."}
+  },
+  {
+    "chunk_id": "p2_032",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "금리(수익률) 변동 안내", "section_body": "이 상품은 실적배당형 상품으로 운용 실적에 따라 수익률이 변동되며, 원금손실이 발생할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_033",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "금리(수익률) 변동 안내", "section_body": "과거의 운용 실적이 미래의 수익률을 보장하지 않으며, 투자 결정은 신중히 하여야 한다."}
+  },
+  {
+    "chunk_id": "p2_034",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "금리(수익률) 변동 안내", "section_body": "시장금리 변동에 따라 기준금리 연동형 상품의 적용금리도 변동될 수 있으며, 변동 시 회사는 회원에게 사전 통지한다."}
+  },
+  {
+    "chunk_id": "p2_035",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "보장성", "section_title": "상품 위험 고지", "section_body": "이 상품은 보장성 보험으로 중도 해지 시 이미 납입한 보험료보다 적은 해지환급금을 받을 수 있다."}
+  },
+  {
+    "chunk_id": "p2_036",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "보장성", "section_title": "상품 위험 고지", "section_body": "보장개시일 이전 또는 면책기간 중 발생한 사고에 대해서는 보험금이 지급되지 않을 수 있다."}
+  },
+  {
+    "chunk_id": "p2_037",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "보장성", "section_title": "상품 위험 고지", "section_body": "계약 전 알릴 의무를 위반한 경우 회사는 계약을 해지하거나 보험금 지급을 제한할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_038",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "보장성", "section_title": "청약철회 안내", "section_body": "보험증권을 받은 날로부터 15일 이내에 청약을 철회할 수 있으며, 이미 납입한 보험료는 지체 없이 반환된다."}
+  },
+  {
+    "chunk_id": "p2_039",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "대출성", "section_title": "청약철회 안내", "section_body": "대출성 상품은 계약서류 제공일로부터 14일 이내에 청약을 철회할 수 있으며, 이미 지급된 대출금과 이자를 반환하여야 한다."}
+  },
+  {
+    "chunk_id": "p2_040",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "청약철회 안내", "section_body": "투자성 상품은 계약체결일로부터 7일 이내에 서면 등으로 청약철회 의사를 표시하는 경우 철회할 수 있다."}
+  },
+  {
+    "chunk_id": "p2_041",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제23조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 개인정보 변경 사항이 있는 경우 반드시 앱 또는 고객센터(1588-0000)를 통해 즉시 변경 신청을 하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_042",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제23조", "paragraph_no": "제2항", "item_no": "", "sub_item": "", "clause_text": "회원은 비밀번호 유출이 의심되는 경우 반드시 즉시 고객센터(1588-0000)로 연락하여 비밀번호를 재설정하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_043",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "약관 확인 안내", "section_body": "본 상품의 상세 약관은 반드시 가입 전 공식 홈페이지(https://www.bank-official.example.com/terms)에서 확인하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_044",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제26조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 카드 분실 또는 도난 시 반드시 즉시 카드사 고객센터(1544-0000)로 연락하여 사용정지를 신청하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_045",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "예금성", "section_title": "만기 확인 안내", "section_body": "만기 안내를 받지 못한 경우 반드시 고객센터(1600-0000)로 문의하시어 만기일을 확인하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_046",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제27조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "이 약관에 동의하지 않는 회원은 반드시 서비스 이용을 중단하고 즉시 해지를 신청하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_047",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "투자성", "section_title": "상품 위험 고지", "section_body": "투자 손실이 우려되는 경우 반드시 가입 전 안내 사항을 확인하시고 전문 상담원과 연락하시기 바랍니다(1588-0000)."}
+  },
+  {
+    "chunk_id": "p2_048",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제28조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 이상 거래가 의심되는 경우 반드시 즉시 이용을 중단하고 고객센터(1588-0000)로 연락하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_049",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {"product_type": "대출성", "section_title": "해지 안내", "section_body": "본 상품 해지 시 위약금이 발생할 수 있으므로 반드시 해지 전 고객센터(1600-0000)에 문의하시기 바랍니다."}
+  },
+  {
+    "chunk_id": "p2_050",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {"article_no": "제29조", "paragraph_no": "제1항", "item_no": "", "sub_item": "", "clause_text": "회원은 회사가 안내하는 공식 채널(공식 홈페이지 https://www.bank-official.example.com, 고객센터 1588-0000) 외의 경로로 개인정보를 요구받는 경우 절대 응답하지 말고 반드시 신고하시기 바랍니다."}
+  }
+]
