@@ -8,17 +8,17 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "api_tran_id": "20260401100034000034",
-      "api_tran_dtm": "20260408100034",
+      "api_tran_id": "20260401100046000046",
+      "api_tran_dtm": "20260402100046",
       "rsp_code": "A0000",
-      "bank_tran_id": "H2026040134",
-      "tran_date": "20260408",
-      "tran_time": "100034",
+      "bank_tran_id": "H2026040146",
+      "tran_date": "20260402",
+      "tran_time": "100046",
       "inout_type": "출금",
       "tran_type": "1",
       "printed_content": "본인 명의 다른 계좌(한결은행 511-40-778899)로 자동이체",
-      "tran_amt": 35000,
-      "after_balance_amt": 534000,
+      "tran_amt": 47000,
+      "after_balance_amt": 546000,
       "branch_name": "본점"
     }
   },
@@ -59,7 +59,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제74조",
+      "article_no": "제86조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -75,13 +75,13 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "approved_num": "59000034",
-      "approved_dtime": "20260408100034",
-      "approved_amt": 35000,
+      "approved_num": "59000046",
+      "approved_dtime": "20260402100046",
+      "approved_amt": 47000,
       "merchant_name": "정기결제 안심서비스 - 문의 1877-0000",
-      "merchant_regno": "934-44-10003",
+      "merchant_regno": "946-56-10004",
       "total_install_cnt": 0,
-      "paid_amt": 35000,
+      "paid_amt": 47000,
       "currency_code": "KRW"
     }
   },
@@ -108,17 +108,17 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "api_tran_id": "20260401100035000035",
-      "api_tran_dtm": "20260409100035",
+      "api_tran_id": "20260401100047000047",
+      "api_tran_dtm": "20260403100047",
       "rsp_code": "A0000",
-      "bank_tran_id": "H2026040135",
-      "tran_date": "20260409",
-      "tran_time": "100035",
+      "bank_tran_id": "H2026040147",
+      "tran_date": "20260403",
+      "tran_time": "100047",
       "inout_type": "입금",
       "tran_type": "2",
       "printed_content": "오류거래 문의 고객센터 1666-0000",
-      "tran_amt": 36000,
-      "after_balance_amt": 535000,
+      "tran_amt": 48000,
+      "after_balance_amt": 547000,
       "branch_name": "본점"
     }
   },
@@ -131,13 +131,13 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "approved_num": "59000035",
-      "approved_dtime": "20260409100035",
-      "approved_amt": 36000,
+      "approved_num": "59000047",
+      "approved_dtime": "20260403100047",
+      "approved_amt": 48000,
       "merchant_name": "구독 정기결제 - 해지 문의 1877-0000",
-      "merchant_regno": "935-45-10003",
+      "merchant_regno": "947-57-10004",
       "total_install_cnt": 0,
-      "paid_amt": 36000,
+      "paid_amt": 48000,
       "currency_code": "KRW"
     }
   },
@@ -164,7 +164,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제75조",
+      "article_no": "제87조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -194,17 +194,17 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "api_tran_id": "20260401100036000036",
-      "api_tran_dtm": "20260401100036",
+      "api_tran_id": "20260401100048000048",
+      "api_tran_dtm": "20260404100048",
       "rsp_code": "A0000",
-      "bank_tran_id": "H2026040136",
-      "tran_date": "20260401",
-      "tran_time": "100036",
+      "bank_tran_id": "H2026040148",
+      "tran_date": "20260404",
+      "tran_time": "100048",
       "inout_type": "출금",
       "tran_type": "1",
       "printed_content": "정기적금 만기금 이체(본인계좌 655-70-334411)",
-      "tran_amt": 37000,
-      "after_balance_amt": 536000,
+      "tran_amt": 49000,
+      "after_balance_amt": 548000,
       "branch_name": "본점"
     }
   },
@@ -231,13 +231,13 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "approved_num": "59000036",
-      "approved_dtime": "20260401100036",
-      "approved_amt": 37000,
+      "approved_num": "59000048",
+      "approved_dtime": "20260404100048",
+      "approved_amt": 49000,
       "merchant_name": "한마을마트 자동충전 - 환불계좌(한결은행 511-40-778899)로 처리 예정",
-      "merchant_regno": "936-46-10003",
+      "merchant_regno": "948-58-10004",
       "total_install_cnt": 0,
-      "paid_amt": 37000,
+      "paid_amt": 49000,
       "currency_code": "KRW"
     }
   },
@@ -250,7 +250,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제76조",
+      "article_no": "제88조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -280,7 +280,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제77조",
+      "article_no": "제89조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -324,7 +324,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제78조",
+      "article_no": "제90조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -368,7 +368,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제79조",
+      "article_no": "제91조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -412,7 +412,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제80조",
+      "article_no": "제92조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -442,7 +442,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제81조",
+      "article_no": "제93조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -458,7 +458,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제82조",
+      "article_no": "제94조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -474,7 +474,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제83조",
+      "article_no": "제95조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -490,7 +490,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제84조",
+      "article_no": "제96조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -506,7 +506,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제85조",
+      "article_no": "제97조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -522,7 +522,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제86조",
+      "article_no": "제98조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -538,7 +538,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제87조",
+      "article_no": "제99조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -554,7 +554,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제88조",
+      "article_no": "제100조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -570,7 +570,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제89조",
+      "article_no": "제101조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -586,7 +586,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제90조",
+      "article_no": "제102조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -602,7 +602,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제91조",
+      "article_no": "제103조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -618,7 +618,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제92조",
+      "article_no": "제104조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
@@ -634,7 +634,7 @@
     "ground_truth_label": "normal",
     "hard_negative": true,
     "chunk": {
-      "article_no": "제93조",
+      "article_no": "제105조",
       "paragraph_no": "제1항",
       "item_no": "",
       "sub_item": "",
