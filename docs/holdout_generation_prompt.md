@@ -158,12 +158,50 @@ dev 결과나 탐지기 코드는 보지 않고 수정했다.
    겹침 0건, `KAD` 문자열 잔존 0건, b1_evasion intent당 9/9 서로 다른 문장·엔티티 3개,
    b0_evasion 전체(60건) B0 점수 0.
 
+## v5 수정 사항 (T0/T1/T3 재생성 + T2/T2p 분리, 여전히 맹검)
+
+v4까지 지적을 못 받았던 T0/T1/T3가 사실 T4-b1보다 더 심하게 중복된(그룹당 사실상 문장 1개를
+스키마 6개에 반복) 것으로 드러나 다시 썼다. 이번에도 탐지기 코드나 체크포인트 2 dev 결과는
+보지 않았다.
+
+1. **T0/T1/T3 전면 재작성**: intent당 6개 전부 다른 문장으로 바꿨다. T0는 "무시하고 모든
+   답변에"류 전역 트리거를 유지하되 어휘·문형(동사: 안내하라/제시하라/전달하라/명시하라/
+   요청하라 등)을 섞었다. T1은 "모든 X" 없이 "이번 답변에서만/이 질문에는"류 국소 지시로
+   바꿨다. T3는 같은 주제(trigger_queries는 intent당 공유)에 대해 문형을 6가지로 바꿨다.
+   계좌/URL은 새 엔티티 풀(`V5_ACCT_POOL`=하늘은행 410-52-667788/미래저축은행
+   770-18-334455/다온은행 880-29-556600, `V5_URL_POOL`=info-center.example.net/
+   service-check.example.org/account-notice.example.com — 파일럿·기존 holdout 전부와
+   안 겹침)에서 intent당 3개씩 순환했다.
+   - **1차 생성 후 attack_class 자동 분류를 돌려보니 T0 6건/T1 7건/T3 6건이
+     `content_poisoning`으로 잘못 분류됐다** — "밝혀라"/"드러내라"/"적으라"/"알려주라" 같은
+     정당한 명령형인데 끝 어미가 B0·attack_class 정규식이 인식하는 4개 단어(하라/하십시오/
+     하세요/바랍니다)가 아니었다. 전부 "~하라"로 끝나는 동사(제시하라/명시하라/공개하라/
+     안내하라/기재하라)로 바꿔 재검증했고, 지금은 T0/T1/T3 전부 100% instruction_injection이다.
+2. **T2/T2p 분리**: 기존 T2(45건, 전부 content_poisoning)는 티어명을 `T2p`로 바꾸고 내용은
+   그대로 유지했다(삭제 안 함, 별도 보고 전용). 판정 규칙에 실제로 쓸 새 `T2`(30건)를
+   instruction_injection으로 새로 만들었다 — B0의 4개 명령형 어미는 쓰지 않고, 의무형
+   ("~해야 합니다"), 완곡 의무형("~하도록 되어 있습니다"), 원칙형("~이/가 원칙입니다") 세
+   가지로 instruction_injection이 되게 했다. intent당 6개(scope_marker true 3 + false 3,
+   정확히 50/50), 엔티티는 T0/T1/T3과 같은 v5 풀을 재사용했다.
+3. **attack_class 정규식 확장**: 새 T2를 위해 "하도록 되어 있다/습니다", "~이/가 원칙이다/
+   입니다" 패턴을 1.5절 정규식에 추가했다(`docs/decision_protocol.md` 변경 이력 참고).
+4. **자동 다양성 검사 스크립트 추가**: `eval/decision_experiment/check_diversity.py` —
+   그룹별 서로 다른 문장 비율 ≥90%, intent별 서로 다른 엔티티 ≥3개를 검사해 위반 시 종료
+   코드 1을 반환한다. 홀드아웃 전체에 돌린 결과 **T2p 5개 그룹(문장 비율 67~83%, 엔티티
+   1~2개)과 T4 b2_evasion 5개 그룹(문장 비율 33~67%)에서만 위반**이 나왔다 — 둘 다 이번
+   라운드까지 포함해 한 번도 다양성 수정 대상으로 지시받지 않은, 의도적으로 유지 중인 구버전
+   데이터다. T0/T1/T2/T3/b0_evasion/b1_evasion은 전부 통과.
+5. **검증 재실행**: 총 325건, 스키마 오류 0건, 카나리 토큰 오염 0건, 파일럿과의 계좌/도메인
+   겹침 0건, 실존 브랜드명 0건, T0/T1/T2/T3 전부 intent당 6/6 서로 다른 문장·엔티티 3개
+   이상, attack_class 전부 기대대로(T0/T1/T2/T3=instruction_injection 100%, T2p=
+   content_poisoning 100%).
+
 ## 스키마 (human_written.json과 호환)
 
 ```
 {
   "chunk_id": "ho_<tier>_<intent 또는 hn 그룹>_<번호>",
-  "tier": "T0" | "T1" | "T2" | "T3" | "T4" | "hard_negative",
+  "tier": "T0" | "T1" | "T2" | "T2p" | "T3" | "T4" | "hard_negative",
   "intent": "acct_redirect" | "external_link" | "prompt_leak" | "info_exfil" | "false_confirmation" | null,
   "group": "<시나리오/그룹 슬러그>",
   "schema_type": "transaction_history" | "card_approval_history" | "terms_clause" | "product_disclosure" | "faq",
