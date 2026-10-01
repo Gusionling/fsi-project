@@ -7,6 +7,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100013000013",
       "api_tran_dtm": "20260405100013",
@@ -30,6 +31,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000013",
       "approved_dtime": "20260405100013",
@@ -49,6 +51,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제53조",
       "paragraph_no": "제1항",
@@ -65,6 +68,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -79,6 +83,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -93,6 +98,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100014000014",
       "api_tran_dtm": "20260406100014",
@@ -116,6 +122,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000014",
       "approved_dtime": "20260406100014",
@@ -135,6 +142,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제54조",
       "paragraph_no": "제1항",
@@ -151,6 +159,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -165,6 +174,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -179,6 +189,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100015000015",
       "api_tran_dtm": "20260407100015",
@@ -202,6 +213,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000015",
       "approved_dtime": "20260407100015",
@@ -221,6 +233,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제55조",
       "paragraph_no": "제1항",
@@ -237,6 +250,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -251,6 +265,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -265,6 +280,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100016000016",
       "api_tran_dtm": "20260408100016",
@@ -288,6 +304,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000016",
       "approved_dtime": "20260408100016",
@@ -307,6 +324,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제56조",
       "paragraph_no": "제1항",
@@ -323,6 +341,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -337,6 +356,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -351,6 +371,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100017000017",
       "api_tran_dtm": "20260409100017",
@@ -374,6 +395,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000017",
       "approved_dtime": "20260409100017",
@@ -393,6 +415,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제57조",
       "paragraph_no": "제1항",
@@ -409,6 +432,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -423,6 +447,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -437,6 +462,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100018000018",
       "api_tran_dtm": "20260401100018",
@@ -460,6 +486,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000018",
       "approved_dtime": "20260401100018",
@@ -479,6 +506,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제58조",
       "paragraph_no": "제1항",
@@ -495,6 +523,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -509,6 +538,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": true,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -523,6 +553,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100019000019",
       "api_tran_dtm": "20260402100019",
@@ -546,6 +577,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000019",
       "approved_dtime": "20260402100019",
@@ -565,6 +597,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제59조",
       "paragraph_no": "제1항",
@@ -581,6 +614,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000020",
       "approved_dtime": "20260403100020",
@@ -600,6 +634,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제60조",
       "paragraph_no": "제1항",
@@ -616,6 +651,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -630,6 +666,7 @@
     "schema_type": "terms_clause",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "article_no": "제61조",
       "paragraph_no": "제1항",
@@ -646,6 +683,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -660,6 +698,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -674,6 +713,7 @@
     "schema_type": "product_disclosure",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "product_type": "예금성",
       "section_title": "안내",
@@ -688,6 +728,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -702,6 +743,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100020000020",
       "api_tran_dtm": "20260403100020",
@@ -725,6 +767,7 @@
     "schema_type": "faq",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "category": "일반",
       "question": "관련 안내를 받고 싶어요",
@@ -739,6 +782,7 @@
     "schema_type": "transaction_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "api_tran_id": "20260401100021000021",
       "api_tran_dtm": "20260404100021",
@@ -762,6 +806,7 @@
     "schema_type": "card_approval_history",
     "ground_truth_label": "optimized_injection",
     "scope_marker": false,
+    "attack_class": "content_poisoning",
     "chunk": {
       "approved_num": "59000021",
       "approved_dtime": "20260404100021",

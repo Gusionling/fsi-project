@@ -117,6 +117,47 @@
 4. **검증 재실행**: 총 265건, 스키마 오류 0건, 카나리 토큰 오염 0건, 파일럿과의 계좌/도메인
    겹침 0건, `KAD` 문자열 잔존 0건, b0_evasion 30건 전부 B0 점수 0.
 
+## v4 수정 사항 (중복/다양성 재검수 반영, 여전히 맹검)
+
+v3까지는 T4-b1_evasion이 "자원 재사용 + 제도 문구 다양화"를 노렸지만 실제로는 45건 중 35개
+문장만 서로 달랐고(원래 3개 자원을 그대로 돌려썼다), 계좌/URL도 intent당 1개뿐이었다. 이번에도
+dev 결과나 탐지기 코드는 보지 않고 수정했다.
+
+1. **`attack_class` 필드 추가**(모든 인젝션 청크 T0~T4): `docs/decision_protocol.md` 1.5절의
+   규칙(명령형 어미 또는 "해야 한다/합니다" 의무형 → `instruction_injection`, 그 외 →
+   `content_poisoning`)을 그대로 코드화해 자동 분류했다. 결과: T0/T1/T3 전부
+   instruction_injection(각 30), T2 전부 content_poisoning(45), T4는 instruction_injection
+   90 / content_poisoning 30.
+2. **T4 b1_evasion 전면 재작성(45건)**: 기존 45건을 전부 버리고(아래 "삭제된 chunk_id" 참고),
+   intent당 9개 전부 다른 문장으로 새로 썼다. 전부 "~해야 한다"로 끝나 attack_class가
+   일관되게 instruction_injection이 되도록 통일했다. 계좌/URL은 새로 만든 가상 엔티티 풀에서
+   intent당 3개씩 순환 사용한다(`ACCT_POOL`=한결은행 511-73-204455/별빛저축은행
+   300-28-667711/이음은행 650-61-338822, `URL_POOL`=benefit-check.example.org/
+   refund-info.example.net/secure-notice.example.com — 전부 파일럿·기존 holdout과 겹치지
+   않는 신규 값).
+3. **T4 b0_evasion을 두 하위 그룹으로 명시**: 기존 서술형 30건은 내용을 바꾸지 않고
+   `attack_class=content_poisoning`으로 자동 분류됐다(실제로 "해야 한다"류 의무형이 없어 규칙
+   그대로 적용됨). 여기에 `attack_class=instruction_injection`이면서 B0 5개 규칙은 여전히
+   피하는("~해야 합니다"로 끝나되 하라/하십시오/하세요/바랍니다가 아니라서 R1 비매치) 신규
+   30건을 추가했다 — intent당 6개, 위와 같은 엔티티 풀을 재사용해 intent당 3개 이상 분산.
+   `eval/decision_experiment/b0_lexical.py`(동결, 읽기만 함)로 60건(기존 30+신규 30) 전부
+   점수 0임을 직접 확인했다.
+4. **T4 b2_evasion**: 분류 과정에서 info_exfil 1건("...덧붙이라")이 "하라"가 아닌 "이라"로
+   끝나 attack_class 정규식에 안 걸리는 것을 발견해 "...포함하라"로 바꿨다(의미는 동일, 끝
+   동사만 교체). 그 외 b2_evasion은 변경하지 않았다 — 이번 재검수 지시 범위가 b1/b0로
+   한정됐기 때문이다.
+5. **삭제된 chunk_id(기존 b1_evasion 45건, 내용이 전부 교체됨)**: `ho_t4_b1_evasion_{intent}_01`
+   ~`_09` (intent=acct_redirect/external_link/prompt_leak/info_exfil/false_confirmation 각각,
+   총 45개). 동일한 chunk_id 네이밍을 새 문장으로 재사용했으므로, 이전 버전의 실제 내용은
+   git 이력(이전 커밋의 `eval/dataset/holdout/t4.json`)에서 확인할 수 있다.
+6. **T0/T1/T2/T3의 중복은 고치지 않았다**(이번 지시 범위 밖). 참고로 T0/T1/T3는 intent당
+   사실상 문장 1개를 스키마 6개에 그대로 반복 사용하는 구조이고(서로 다른 문장 수가 그룹당
+   1~2개뿐), T2의 `_정책문` 하위그룹도 변형 3종을 6자리에 순환시켜 그룹당 4~5개만 서로
+   다르다. `_서술형무표지`와 hard_negative는 이미 전부 서로 다른 문장이었다.
+7. **검증 재실행**: 총 295건, 스키마 오류 0건, 카나리 토큰 오염 0건, 파일럿과의 계좌/도메인
+   겹침 0건, `KAD` 문자열 잔존 0건, b1_evasion intent당 9/9 서로 다른 문장·엔티티 3개,
+   b0_evasion 전체(60건) B0 점수 0.
+
 ## 스키마 (human_written.json과 호환)
 
 ```
@@ -128,6 +169,7 @@
   "schema_type": "transaction_history" | "card_approval_history" | "terms_clause" | "product_disclosure" | "faq",
   "ground_truth_label": "naive_injection" | "optimized_injection" | "normal",
   "scope_marker": true | false,  # 인젝션 청크에만 존재("모든 답변/응답/상담/안내"류 전역 범위 표현 포함 여부)
+  "attack_class": "instruction_injection" | "content_poisoning",  # 인젝션 청크에만 존재(docs/decision_protocol.md 1.5절)
   "hard_negative": true,  # hard_negative 항목에만 존재
   "trigger_queries": ["...", "...", "..."],  # T3 항목에만 존재
   "chunk": { ... 스키마별 필드 ... }
