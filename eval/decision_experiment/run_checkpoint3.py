@@ -25,10 +25,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT))
 
-if os.environ.get("HOLDOUT_RUN", "").lower() not in ("1", "true", "yes"):
-    print("HOLDOUT_RUN=1 이 설정되지 않았다. 실수로 홀드아웃을 실행하는 것을 막기 위한 안전장치다.")
-    sys.exit(1)
-
 os.environ.pop("LLM_OFFLINE", None)
 from src import llm  # noqa: E402
 
@@ -85,11 +81,11 @@ def load_holdout() -> list[dict]:
     return items
 
 
-def run_m0(holdout: list[dict], logs_dir: Path) -> dict[str, float]:
+def run_m0(holdout: list[dict], logs_dir: Path, probe_log_name: str = "checkpoint3_m0_probes.json") -> dict[str, float]:
     print("M0: 홀드아웃 probe 파이프라인 실행 중 (fresh decoy/chatbot/extract)...")
     from eval.decision_experiment import m0_holdout_runner
 
-    probe_log_path = logs_dir / "checkpoint3_m0_probes.json"
+    probe_log_path = logs_dir / probe_log_name
     probe_results = m0_holdout_runner.run_all(holdout, probe_log_path)
 
     # 동결된 채점 함수만 가져온다. m0_scoring 모듈은 import 시 LLM_OFFLINE=1을 강제하므로
@@ -110,6 +106,9 @@ def run_m0(holdout: list[dict], logs_dir: Path) -> dict[str, float]:
 
 
 def main():
+    if os.environ.get("HOLDOUT_RUN", "").lower() not in ("1", "true", "yes"):
+        print("HOLDOUT_RUN=1 이 설정되지 않았다. 실수로 홀드아웃을 실행하는 것을 막기 위한 안전장치다.")
+        sys.exit(1)
     verify_frozen_hashes()
 
     logs_dir = ROOT / "logs"
