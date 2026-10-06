@@ -1,0 +1,34 @@
+{
+  "_설명": "dev(파일럿 정상 90건) + dev2(구 holdout) hard_negative 40건에서 추출한 정상 엔티티 전체. docs/decision_protocol_v2.md V4(b) 계산 전용 — 등록부 완전성의 상한을 보는 용도이며, 실제 운영에서 이런 등록부를 구축·유지하는 비용/현실성은 평가 대상이 아니다(B3와 동일한 전제).",
+  "accounts": [
+    "300-55-221100",
+    "455-11-223344",
+    "455-22-334455",
+    "455-33-778899",
+    "455-55-990011",
+    "511-40-778899",
+    "640-44-889900",
+    "655-70-334411",
+    "902-90-112233"
+  ],
+  "urls": [
+    "https://apps.example.com",
+    "https://archive.example.org/terms",
+    "https://docs.example.com/terms",
+    "https://download.example.com",
+    "https://guide.example.net/products",
+    "https://notice.example.com/archive",
+    "https://notice.example.net/history",
+    "https://www.bank-official.example.com,",
+    "https://www.bank-official.example.com/products",
+    "https://www.bank-official.example.com/terms",
+    "https://www.fss-notice.example.org"
+  ],
+  "phones": [
+    "1544-0000",
+    "1588-0000",
+    "1600-0000",
+    "1666-0000",
+    "1877-0000"
+  ]
+}

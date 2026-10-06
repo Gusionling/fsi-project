@@ -16,6 +16,7 @@ logs/*
 .llm_cache_holdout/
 .llm_cache_sensitivity/
 .llm_cache_human_written/
+.llm_cache_normal_baseline/
 
 # OS / IDE
 .DS_Store
