@@ -18,6 +18,8 @@ logs/*
 .llm_cache_human_written/
 .llm_cache_normal_baseline/
 .llm_cache_policy_adjacent/
+.llm_cache_k1/
+.llm_cache_k2_dryrun/
 
 # OS / IDE
 .DS_Store
