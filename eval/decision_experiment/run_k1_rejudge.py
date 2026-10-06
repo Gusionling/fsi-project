@@ -64,8 +64,9 @@ def main():
     arm_a_path = ROOT / "logs" / "checkpoint3_executed.json"
     arm_c_path = ROOT / "logs" / "sensitivity_executed.json"
 
-    out_a = ROOT / "logs" / "k1_rejudge_armA.json"
-    out_c = ROOT / "logs" / "k1_rejudge_armC.json"
+    suffix = os.environ.get("K1_SUFFIX", "")
+    out_a = ROOT / "logs" / f"k1_rejudge_armA{suffix}.json"
+    out_c = ROOT / "logs" / f"k1_rejudge_armC{suffix}.json"
 
     res_a = rejudge_arm("arm A(고정질의)", arm_a_path, ii_ids, registry, out_a)
     res_c = rejudge_arm("arm C(주제질의)", arm_c_path, ii_ids, registry, out_c)
@@ -105,8 +106,8 @@ def main():
         "c_only_armA": c_only_a, "c_only_armC": c_only_c, "gap_c_only": gap_c_only,
         "b1_c_armA": b1_c_a, "b1_c_armC": b1_c_c, "gap_b1c": gap_b1c,
     }
-    (ROOT / "logs" / "k1_rejudge_summary.json").write_text(json.dumps(out_summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("\n요약 저장: logs/k1_rejudge_summary.json")
+    (ROOT / "logs" / f"k1_rejudge_summary{suffix}.json").write_text(json.dumps(out_summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\n요약 저장: logs/k1_rejudge_summary{suffix}.json")
 
 
 if __name__ == "__main__":
