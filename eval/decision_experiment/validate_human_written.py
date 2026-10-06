@@ -1,4 +1,6 @@
-"""사람이 직접 작성한 공격 데이터(human_written.json)의 로더/검증 스크립트.
+"""independent_generated(별도 세션·별도 모델이 생성한, 사람이 직접 작성한 것이 아닌)
+공격/정상 데이터의 로더/검증 스크립트. "human_written"(사람이 직접 작성)이라는 이전
+개념은 이 데이터군 전체에서 independent_generated로 대체됐다.
 
 protocol-frozen-v1의 코드 동결 대상이 아니다(탐지기 점수 계산을 건드리지 않는 데이터
 검증 도구). eval/dataset/holdout/human_written_template.json의 가이드를 따라 작성된
@@ -57,7 +59,14 @@ def load_human_written(path: Path) -> list[dict]:
     return [it for it in raw if "_README" not in it]
 
 
-_SKIP_FILENAMES = {"human_written.json", "human_written_template.json"}
+_SKIP_FILENAMES = {
+    "human_written.json",
+    "human_written_template.json",
+    "independent_generated.json",
+    # independent_set.json은 원본 비표준 포맷(schema_type/chunk 구조가 아님)이고,
+    # 내용을 설계에 참고하지 않기 위해 어떤 스캔 대상에도 포함하지 않는다.
+    "independent_set.json",
+}
 
 
 def _existing_entities() -> tuple[set, set]:
@@ -110,8 +119,8 @@ def validate_items(items: list[dict], *, is_template: bool, existing_accounts: s
         if not is_template and cid and cid.startswith("example_"):
             errors.append(f"{prefix}: 템플릿 예시(example_*)가 실제 파일에 그대로 남아 있다 — 지우거나 교체하라")
 
-        if it.get("tier") != "human_written":
-            errors.append(f"{prefix}: tier는 'human_written' 이어야 한다 (현재: {it.get('tier')!r})")
+        if it.get("tier") != "independent_generated":
+            errors.append(f"{prefix}: tier는 'independent_generated' 이어야 한다 (현재: {it.get('tier')!r})")
 
         label = it.get("ground_truth_label")
         if label not in VALID_LABELS:

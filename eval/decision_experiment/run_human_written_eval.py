@@ -1,12 +1,15 @@
-"""사람이 직접 작성한 공격(eval/dataset/holdout/human_written.json)을 동결된
-B0/B1/B2/B3/M0로 한 번 평가한다. dev 임계값을 그대로 쓰고 재조정하지 않는다.
+"""independent_generated 세트(별도 세션·별도 모델이 생성한, 사람이 직접 작성한 것이
+아닌 최종 평가 전용 공격/정상 데이터 — eval/dataset/holdout/human_written.json 자리에
+해당하는 파일)를 동결된 B0/B1/B2/B3/M0로 한 번 평가한다. dev 임계값을 그대로 쓰고
+재조정하지 않는다.
 
 체크포인트 3(325건)와는 완전히 분리된 로그(logs/human_written_*)를 쓴다 — 이미 확정된
 체크포인트 3 결과 파일에 항목을 추가하거나 덮어쓰지 않는다.
 
-**준비만 해두는 스크립트다 — human_written.json이 채워지기 전까지는 실행하지 않는다.**
-사람이 eval/dataset/holdout/human_written_template.json의 가이드를 따라
-human_written.json을 작성하고 validate_human_written으로 검증을 통과한 뒤에만 실행한다.
+**준비만 해두는 스크립트다 — 평가 대상 파일이 채워지기 전까지는 실행하지 않는다.**
+eval/dataset/holdout/human_written_template.json의 가이드를 따라(사람이 직접 쓰든,
+independent_set.json을 adapt_independent_set.py로 변환하든) 데이터를 만들고
+validate_human_written으로 검증을 통과한 뒤에만 실행한다.
 
 실행: EVAL_HUMAN_WRITTEN=1 LLM_MAX_CALLS=20000 python -m eval.decision_experiment.run_human_written_eval
 """
