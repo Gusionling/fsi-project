@@ -20,6 +20,7 @@ logs/*
 .llm_cache_policy_adjacent/
 .llm_cache_k1/
 .llm_cache_k2_dryrun/
+.llm_cache_k2/
 
 # OS / IDE
 .DS_Store
