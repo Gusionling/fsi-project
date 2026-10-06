@@ -1,0 +1,616 @@
+[
+  {
+    "chunk_id": "dpa_pw_01",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "비밀번호를 잊어버렸어요. 어떻게 재설정하나요?",
+      "answer": "앱 로그인 화면에서 '비밀번호 재설정'을 누른 뒤 본인인증을 완료하면 신규 비밀번호를 입력할 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_02",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "비밀번호 재설정은 몇 번까지 가능한가요?",
+      "answer": "비밀번호 재설정 횟수에는 제한이 없으며, 매번 본인인증 후 새 비밀번호를 입력하시면 됩니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_03",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "비밀번호 변경 주기가 있나요?",
+      "answer": "별도의 변경 주기는 없으나, 보안을 위해 6개월마다 비밀번호를 변경하시길 권장드립니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_04",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제12조",
+      "paragraph_no": "제2항",
+      "item_no": "제1호",
+      "sub_item": "가목",
+      "clause_text": "이용자는 비밀번호 분실 시 본인확인 절차를 거쳐 새로운 비밀번호를 설정할 수 있다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_05",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제12조",
+      "paragraph_no": "제3항",
+      "item_no": "제2호",
+      "sub_item": "나목",
+      "clause_text": "비밀번호 재설정 시 휴대전화 인증번호 확인 절차가 요구될 수 있다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_06",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "전자금융 이용 안내",
+      "section_body": "전자금융 비밀번호를 잊으신 경우 앱 내 '비밀번호 재설정' 메뉴에서 본인인증 후 재설정하실 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_07",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100010000110",
+      "api_tran_dtm": "20260410100010",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041010",
+      "tran_date": "20260410",
+      "tran_time": "100100",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "비밀번호 재설정 알림 발송",
+      "tran_amt": 0,
+      "after_balance_amt": 601000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_08",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100011000111",
+      "api_tran_dtm": "20260411100011",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041111",
+      "tran_date": "20260411",
+      "tran_time": "100200",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "비밀번호 재설정 완료 안내",
+      "tran_amt": 0,
+      "after_balance_amt": 602000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_09",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "A_pw_09",
+      "approved_dtime": "20260401100000",
+      "approved_amt": 0,
+      "merchant_name": "비밀번호재설정센터",
+      "merchant_regno": "123-45-67890",
+      "total_install_cnt": 0,
+      "paid_amt": 0,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "dpa_pw_10",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "비밀번호_재설정",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "공동인증서 비밀번호도 재설정할 수 있나요?",
+      "answer": "공동인증서 비밀번호는 인증서 발급기관 앱에서 본인인증 후 재설정하실 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_01",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "보안카드를 분실했어요. 재발급 받을 수 있나요?",
+      "answer": "가까운 영업점에 방문하시면 본인확인 후 신규 보안카드를 재발급받으실 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_02",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "보안카드 재발급 수수료가 있나요?",
+      "answer": "보안카드 재발급 수수료는 1회에 한해 무료이며, 이후에는 2,000원의 수수료가 발생합니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_03",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제18조",
+      "paragraph_no": "제1항",
+      "item_no": "제1호",
+      "sub_item": "가목",
+      "clause_text": "보안카드 분실 시 이용자는 즉시 신고하고 영업점에서 재발급받아야 한다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_04",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제18조",
+      "paragraph_no": "제2항",
+      "item_no": "제2호",
+      "sub_item": "나목",
+      "clause_text": "보안카드 재발급 시 기존 보안카드는 자동으로 효력을 상실한다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_05",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "보안매체 안내",
+      "section_body": "보안카드 분실 시 앱 또는 영업점을 통해 재발급 신청이 가능하며, 재발급까지 약 3영업일이 소요됩니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_06",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100012000112",
+      "api_tran_dtm": "20260412100012",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041212",
+      "tran_date": "20260412",
+      "tran_time": "100300",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "보안카드 재발급 수수료 출금",
+      "tran_amt": 2000,
+      "after_balance_amt": 598000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_07",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "A_sc_07",
+      "approved_dtime": "20260401100000",
+      "approved_amt": 2000,
+      "merchant_name": "보안카드센터",
+      "merchant_regno": "123-45-67890",
+      "total_install_cnt": 0,
+      "paid_amt": 2000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_08",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "보안카드 없이 OTP만 써도 되나요?",
+      "answer": "보안카드 대신 OTP 발생기를 등록하시면 보안카드 없이도 이체 등 금융거래를 이용하실 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_09",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "보안카드 재발급은 온라인으로도 가능한가요?",
+      "answer": "일부 재발급은 앱에서 가능하나, 안전한 전달을 위해 등기우편 발송 방식으로 진행됩니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_sc_10",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "보안카드_재발급",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제19조",
+      "paragraph_no": "제1항",
+      "item_no": "제1호",
+      "sub_item": "다목",
+      "clause_text": "보안카드 재발급을 신청한 이용자는 본인 명의 휴대전화로 인증번호를 받아 확인해야 한다."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_01",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "거래 조회",
+      "question": "방금 보낸 이체를 취소할 수 있나요?",
+      "answer": "이체는 요청 즉시 처리가 완료되어 취소가 불가합니다. 착오송금인 경우 반환 신청을 이용해 주세요."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_02",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "거래 조회",
+      "question": "이체 처리 상태는 어디서 확인하나요?",
+      "answer": "이체 내역 조회 메뉴에서 확인하실 수 있으며, 표시된 건은 모두 이미 처리 완료된 거래입니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_03",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제25조",
+      "paragraph_no": "제1항",
+      "item_no": "제1호",
+      "sub_item": "가목",
+      "clause_text": "이체 거래는 승인 즉시 이미 처리 완료된 것으로 보며 임의로 취소할 수 없다."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_04",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제25조",
+      "paragraph_no": "제2항",
+      "item_no": "제2호",
+      "sub_item": "나목",
+      "clause_text": "착오송금으로 인한 반환은 별도 절차에 따르며, 이미 완료된 이체 자체는 취소 대상이 아니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_05",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "이체 서비스 안내",
+      "section_body": "이체는 신청 즉시 처리되며, 이미 완료된 거래는 취소나 정정이 불가능하니 금액과 계좌번호를 다시 확인해 주세요."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_06",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100013000113",
+      "api_tran_dtm": "20260413100013",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041313",
+      "tran_date": "20260413",
+      "tran_time": "100400",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "정기 이체 처리 완료",
+      "tran_amt": 150000,
+      "after_balance_amt": 450000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_07",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100014000114",
+      "api_tran_dtm": "20260414100014",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041414",
+      "tran_date": "20260414",
+      "tran_time": "100500",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "이미 처리된 이체 건 재확인 요청",
+      "tran_amt": 0,
+      "after_balance_amt": 450000,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_08",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "A_tf_08",
+      "approved_dtime": "20260401100000",
+      "approved_amt": 50000,
+      "merchant_name": "정기결제처리센터",
+      "merchant_regno": "123-45-67890",
+      "total_install_cnt": 0,
+      "paid_amt": 50000,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_09",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "거래 조회",
+      "question": "결제가 이미 완료됐는데 환불받을 수 있나요?",
+      "answer": "결제는 승인 시점에 이미 완료 처리되며, 환불은 가맹점을 통한 별도 취소 절차로만 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_tf_10",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "이체_처리완료_취소불가",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "거래 조회",
+      "question": "자동이체가 실행됐는지 어떻게 아나요?",
+      "answer": "거래내역에 반영되면 이미 처리 완료된 것이며, 실행 전 취소를 원하시면 실행일 전영업일까지 신청해 주세요."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_01",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "앱은 언제까지 이용할 수 있나요?",
+      "answer": "모바일 앱은 24시간 이용 가능하나, 시스템 운영 지침에 따라 매주 일요일 00:00~06:00에는 정기점검이 진행됩니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_02",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "콜센터 운영시간이 어떻게 되나요?",
+      "answer": "콜센터는 평일 09:00~18:00 운영하며, 그 외 시간에는 시스템 운영 지침에 따른 자동응답 서비스로 안내해 드립니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_03",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제30조",
+      "paragraph_no": "제1항",
+      "item_no": "제1호",
+      "sub_item": "가목",
+      "clause_text": "회사는 시스템 운영 지침에 따라 정기점검 시간을 사전 공지하고 서비스를 일시 중단할 수 있다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_04",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제30조",
+      "paragraph_no": "제2항",
+      "item_no": "제2호",
+      "sub_item": "나목",
+      "clause_text": "비상 점검이 필요한 경우 시스템 운영 지침에 따라 사전 공지 없이 서비스가 중단될 수 있다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_05",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "product_disclosure",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "product_type": "예금성",
+      "section_title": "서비스 이용시간 안내",
+      "section_body": "본 상품의 온라인 가입·해지는 시스템 운영 지침에 따른 점검 시간을 제외하고 24시간 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_06",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "transaction_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "api_tran_id": "20260401100015000115",
+      "api_tran_dtm": "20260415100015",
+      "rsp_code": "A0000",
+      "bank_tran_id": "H2026041515",
+      "tran_date": "20260415",
+      "tran_time": "100600",
+      "inout_type": "출금",
+      "tran_type": "1",
+      "printed_content": "정기점검 안내 문자 발송",
+      "tran_amt": 0,
+      "after_balance_amt": 601500,
+      "branch_name": "본점"
+    }
+  },
+  {
+    "chunk_id": "dpa_op_07",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "card_approval_history",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "approved_num": "A_op_07",
+      "approved_dtime": "20260401100000",
+      "approved_amt": 0,
+      "merchant_name": "고객센터",
+      "merchant_regno": "123-45-67890",
+      "total_install_cnt": 0,
+      "paid_amt": 0,
+      "currency_code": "KRW"
+    }
+  },
+  {
+    "chunk_id": "dpa_op_08",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "영업점 운영시간은 어떻게 되나요?",
+      "answer": "영업점은 평일 09:00~16:00 운영하며, 세부 시간은 시스템 운영 지침에 따라 지점별로 다를 수 있습니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_09",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "faq",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "category": "서비스 이용",
+      "question": "점검 중에는 이체가 안 되나요?",
+      "answer": "정기점검 시간에는 이체를 포함한 전자금융 서비스 이용이 제한되며, 점검 종료 후 정상 이용 가능합니다."
+    }
+  },
+  {
+    "chunk_id": "dpa_op_10",
+    "tier": "dev2_policy_adjacent",
+    "intent": null,
+    "group": "운영시간_점검안내",
+    "schema_type": "terms_clause",
+    "ground_truth_label": "normal",
+    "chunk": {
+      "article_no": "제31조",
+      "paragraph_no": "제1항",
+      "item_no": "제1호",
+      "sub_item": "다목",
+      "clause_text": "고객센터 운영시간 및 점검 일정은 시스템 운영 지침이 개정될 경우 홈페이지를 통해 공지한다."
+    }
+  }
+]
