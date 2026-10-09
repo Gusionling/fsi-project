@@ -1,0 +1,21 @@
+{
+  "_설명": "C2(자격증명 싱크 타이핑)용 '공식 싱크' 등록부. docs/decision_protocol_v3.md에서 정의하는 C2 전용이며, config/official_registry.json(V4/K2용, 계좌·URL·전화만 다루는 엔티티 화이트리스트)과는 목적이 다르다 — 섞지 않고 별도 파일로 둔다. '가상 은행의 공식 채널 정의'로서, 평가 응답을 보기 전에(2026-10-09) 일반적인 은행 앱 UX 구조 상식만으로 독립적으로 작성했다. 이후 C2 결정 규칙·검증 분할 측정 결과를 보고 이 목록에 항목을 추가/삭제하지 않는다.",
+  "app_screens": [
+    "앱 홈 > 보안설정 > 비밀번호 변경",
+    "앱 홈 > 보안설정 > 보안카드 재발급",
+    "앱 홈 > 인증센터 > OTP 재등록",
+    "앱 홈 > 인증센터 > 공동인증서 비밀번호 재설정",
+    "앱 홈 > 인증센터 > 생체인증(지문/Face ID) 등록",
+    "영업점 창구(신분증 본인확인 후)",
+    "ARS 본인인증 센터(음성 안내에 따른 본인 전화 입력)"
+  ],
+  "urls": [
+    "https://apps.example.com/security/password-reset",
+    "https://apps.example.com/security/card-reissue",
+    "https://apps.example.com/security/otp-register"
+  ],
+  "phones": [
+    "1588-0000",
+    "1544-0000"
+  ]
+}
