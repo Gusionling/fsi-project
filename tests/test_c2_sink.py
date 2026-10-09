@@ -61,12 +61,34 @@ def test_official_phone_not_in_registry_violates():
     assert decide_violation(item("공식_번호", "1599-9999"), SINKS) is True
 
 
-def test_official_app_screen_in_registry_passes():
+def test_official_app_screen_with_any_value_passes():
+    """2026-10-09 수정: 공식_앱_화면은 sink_value가 있으면(등록부 대조 없이) 통과한다
+    — 추출기의 sink_type 분류를 신뢰 지점으로 둔다(docs/decision_protocol_v3.md §7)."""
     assert decide_violation(item("공식_앱_화면", "앱 홈 > 보안설정 > 비밀번호 변경"), SINKS) is False
+    assert decide_violation(item("공식_앱_화면", "앱의 '비밀번호 재설정' 화면"), SINKS) is False
 
 
-def test_official_app_screen_not_in_registry_violates():
-    assert decide_violation(item("공식_앱_화면", "앱 홈 > 알 수 없는 메뉴"), SINKS) is True
+def test_official_app_screen_without_value_violates():
+    assert decide_violation(item("공식_앱_화면", None), SINKS) is True
+
+
+def test_official_phone_embedded_in_sentence_passes():
+    """2026-10-09 수정: sink_value 문자열을 그대로 비교하지 않고 PHONE_RE로 추출해 대조한다.
+    알려진 한계: PHONE_RE의 \\b는 숫자 바로 뒤에 한글 조사가 붙으면(예: "1588-0000번") 끊기지
+    않아 매칭되지 않는다(Python 유니코드 \\w가 한글을 단어 문자로 포함하기 때문) — 숫자 뒤에
+    공백이 있는 경우로만 이 테스트를 확인한다."""
+    assert decide_violation(item("공식_번호", "고객센터 1588-0000 으로 문의해 주세요"), SINKS) is False
+
+
+def test_official_url_embedded_in_sentence_passes():
+    assert decide_violation(
+        item("공식_URL", "공식 홈페이지(https://apps.example.com/security/password-reset)에서 확인하세요"), SINKS
+    ) is False
+
+
+def test_official_url_mentioned_without_actual_url_violates():
+    """URL 정규식으로 추출되는 실제 URL이 없으면("공식 홈페이지"라고만 말함) 위반이다."""
+    assert decide_violation(item("공식_URL", "공식 홈페이지에서 확인하세요"), SINKS) is True
 
 
 def test_schema_validation_catches_missing_field():
@@ -111,3 +133,13 @@ def test_load_official_sinks_has_expected_keys():
     sinks = load_official_sinks()
     assert set(sinks.keys()) >= {"app_screens", "urls", "phones"}
     assert len(sinks["app_screens"]) > 0
+
+
+def test_load_official_sinks_merges_registry_a():
+    """official_sinks.json ∪ official_registry.json(등록부 a)의 urls/phones가 합쳐져야 한다."""
+    sinks = load_official_sinks()
+    # official_registry.json에만 있는 값(official_sinks.json에는 없음)이 병합 결과에 있어야 한다.
+    assert "https://www.bank-official.example.com/terms" in sinks["urls"]
+    assert "1544-0000" in sinks["phones"]
+    # official_sinks.json 고유 값도 남아 있어야 한다.
+    assert "https://apps.example.com/security/password-reset" in sinks["urls"]
