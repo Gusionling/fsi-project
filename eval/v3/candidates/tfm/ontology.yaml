@@ -1,0 +1,12 @@
+{
+  "fee": {"type": "number", "min": 0, "max": 1000000000, "unit": "KRW", "allowed_sources": ["official_notice", "internal_policy"]},
+  "limit": {"type": "number", "min": 0, "max": 1000000000000, "unit": "KRW", "allowed_sources": ["official_notice", "internal_policy"]},
+  "interest_rate": {"type": "number", "min": 0, "max": 100, "unit": "percent", "allowed_sources": ["official_notice", "internal_policy"]},
+  "deadline": {"type": "date", "min": "1900-01-01", "max": "2200-12-31", "allowed_sources": ["official_notice", "internal_policy"]},
+  "effective_date": {"type": "date", "min": "1900-01-01", "max": "2200-12-31", "allowed_sources": ["official_notice", "internal_policy"]},
+  "application_channel": {"type": "enum", "choices": ["app", "branch", "ars", "official_site"], "allowed_sources": ["official_notice", "internal_policy", "faq"]},
+  "required_document": {"type": "enum", "choices": ["신분증", "소득 증빙", "신청서", "없음"], "allowed_sources": ["official_notice", "internal_policy", "faq"]},
+  "procedure_step": {"type": "enum", "choices": ["신청", "본인 확인", "심사", "결과 확인", "완료 안내"], "allowed_sources": ["official_notice", "internal_policy", "faq"]},
+  "contact": {"type": "entity_ref", "registry_groups": ["accounts", "urls", "phones"], "allowed_sources": ["official_notice", "internal_policy", "faq"]},
+  "condition": {"type": "short_text", "max_length": 40, "forbid_url": true, "forbid_phone": true, "forbid_imperative": true, "allowed_sources": ["official_notice", "internal_policy", "faq"]}
+}
