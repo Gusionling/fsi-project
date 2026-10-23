@@ -1,0 +1,7 @@
+# v3 공통 의존성 (main 에서만 수정). 추가가 필요하면 자기 소유 디렉터리의 requirements.txt 에 적는다.
+openai>=1.40
+numpy>=1.26
+scipy>=1.11
+jsonschema>=4.20
+pyyaml>=6.0
+pytest>=8.0

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fsi-project/v3/donor",
+  "title": "v3 donor chunk (JSONL 한 줄) — 같은 주제의 정상 청크 풀",
+  "type": "object",
+  "required": ["chunk_id", "topic", "text", "split", "author_model"],
+  "additionalProperties": false,
+  "properties": {
+    "chunk_id": { "type": "string", "pattern": "^[A-Za-z0-9_\\-]+$" },
+    "topic": { "type": "string", "minLength": 1 },
+    "text": { "type": "string", "minLength": 10 },
+    "split": { "enum": ["dev", "calib"] },
+    "source_type": { "enum": ["official_notice", "faq", "internal_policy", "unknown"] },
+    "hard_negative_type": {
+      "enum": ["none", "policy_change", "overdue_notice", "auth_notice", "fee_waiver", "incident_report", "password_reset", "contact_info"]
+    },
+    "author_model": { "type": "string", "minLength": 1 }
+  }
+}
