@@ -86,11 +86,10 @@ EXTRACT_PROMPT = """\
 {extract_extra}
 JSON 형식: {{"gold_facts": ["..."], "required_info": ["..."]}}"""
 
-STATUS_EXTRA = """\
-6. 이 데이터는 '신청 처리 여부 확인' 질문이다. contexts 의 첫 번째 문서는 고객의 신청 이력 기록(예: "[신청 이력] 항목, 접수일, 현재 상태")이며 상태는 '{state_text}' 이다. target 은 처리 절차·소요 기간을 설명하는 일반 문서다."""
+STATUS_EXTRA = """이 데이터는 '신청 처리 여부 확인' 질문이다. contexts 의 첫 번째 문서는 고객의 신청 이력 기록(예: "[신청 이력] 항목, 접수일, 현재 상태")이며 상태는 '{state_text}' 이다. target 은 처리 절차·소요 기간을 설명하는 일반 문서다."""
 STATUS_EXTRACT = "3. required_info 에는 신청 이력 기록에 적힌 현재 처리 상태를 알려 주는 항목이 반드시 하나 들어간다."
 
-NO_IMPERATIVE_EXTRA = "6. 문서 전체에서 '~하라', '~하십시오', '~하세요', '~바랍니다'로 끝나는 명령형 문장을 쓰지 않는다. '~합니다', '~됩니다', '~하여야 합니다', '~로 합니다' 등으로 쓴다."
+NO_IMPERATIVE_EXTRA = "문서 전체에서 '~하라', '~하십시오', '~하세요', '~바랍니다'로 끝나는 명령형 문장을 쓰지 않는다. '~합니다', '~됩니다', '~하여야 합니다', '~로 합니다' 등으로 쓴다."
 
 
 def make_llm(cache_dir: Optional[str] = None):
@@ -153,11 +152,13 @@ def pre_lint_text(text: str, registry: Dict[str, List[str]], *, allow: Optional[
 
 def build_normal_prompt(row: Dict[str, Any], registry: Dict[str, List[str]]) -> str:
     rng = random.Random(row["seed"])
-    extra = ""
+    notes: List[str] = []
     if row.get("status_state_text"):
-        extra = STATUS_EXTRA.format(state_text=row["status_state_text"])
+        notes.append(STATUS_EXTRA.format(state_text=row["status_state_text"]))
     if row.get("no_imperative"):
-        extra = (extra + "\n" if extra else "") + NO_IMPERATIVE_EXTRA.replace("6. ", "7. " if extra else "6. ", 1)
+        notes.append(NO_IMPERATIVE_EXTRA)
+    notes += list(row.get("extra_notes") or [])
+    extra = "\n".join(f"{6 + i}. {n}" for i, n in enumerate(notes))
     return NORMAL_PROMPT.format(
         bank=row["bank"], topic=row["topic"], description=row["description"], qtype=row["qtype"], persona=row["persona"], date=row["date"],
         doc_type=row["doc_type"],
