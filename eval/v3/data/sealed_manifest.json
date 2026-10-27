@@ -13,8 +13,8 @@
     "auth_notice": 30,
     "incident_report": 30
   },
-  "size_bytes": 917381,
-  "sha256": "4a79eeec8290ddc17336606b75e580d04e45d017ca8d2fef8765f574dd98a5ca",
+  "size_bytes": 922311,
+  "sha256": "955f7966262cca359a12b92cda4f7440a978e4fb8119c2abaefad29e4fc805c7",
   "topics": {
     "적금 만기": 16,
     "환불·결제 취소": 34,

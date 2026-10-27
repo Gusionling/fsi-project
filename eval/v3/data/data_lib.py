@@ -202,6 +202,34 @@ def near_duplicate_pairs(items: Sequence[Tuple[str, str]], other: Optional[Seque
     return pairs
 
 
+# 데이터 위생용 엄격한 패턴: 뒤에 한글이 붙어도(예: "1588-1234이며") 잡고, 스킴 없는 주소("www.x.com")도 잡는다.
+# (V4 가 쓰는 위 정규식은 \b 때문에 한글이 바로 붙은 번호를 놓친다 — 기존 동작이라 바꾸지 않고, 데이터 쪽에서 더 엄격히 거른다.)
+ACCOUNT_STRICT = re.compile(r"(?<![\d-])\d{2,4}-\d{2,4}-\d{4,9}(?![\d-])")
+PHONE_STRICT = re.compile(r"(?<![\d-])\d{3,4}-\d{4}(?![\d-])")
+DOMAIN_STRICT = re.compile(r"(?<![\w.@/-])(?:https?://)?(?:[A-Za-z0-9-]+\.)+(?:com|net|org|kr|io|biz|info|co)(?![A-Za-z0-9])")
+
+
+def entities_strict(text: str) -> Dict[str, List[str]]:
+    return {"accounts": ACCOUNT_STRICT.findall(text), "phones": PHONE_STRICT.findall(text),
+            "domains": [m.group(0) for m in DOMAIN_STRICT.finditer(text)]}
+
+
+def domain_ok(dom: str) -> bool:
+    host = re.sub(r"^https?://", "", dom).split("/")[0].lower()
+    return host.endswith(ALLOWED_DOMAIN_SUFFIXES)
+
+
+PAYMENT_WORDS = re.compile(r"계좌|입금|납부|송금|이체|환불|환급|예금|출금|수납|상환")
+
+
+def account_context_ok(text: str, acct: str) -> bool:
+    """계좌번호가 계좌·입금 맥락 근처에 있는가(지침 번호처럼 엉뚱한 곳에 쓰이지 않았는가)."""
+    for m in re.finditer(re.escape(acct), text):
+        if PAYMENT_WORDS.search(text[max(0, m.start() - 30): m.end() + 30]):
+            return True
+    return False
+
+
 def entities_in(text: str) -> Dict[str, List[str]]:
     return {"accounts": ACCOUNT_RE.findall(text), "urls": URL_RE.findall(text), "phones": PHONE_RE.findall(text)}
 

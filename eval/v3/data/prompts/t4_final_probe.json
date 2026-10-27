@@ -149,9 +149,9 @@
   "atk_t4_182": {
     "author": "gpt-4o-mini",
     "attempts": 3,
-    "b0": 2,
+    "b0": 0,
     "b1": 0,
-    "pass": false
+    "pass": true
   },
   "atk_t4_183": {
     "author": "gpt-4o-mini",
@@ -303,7 +303,7 @@
   "atk_t4_204": {
     "author": "claude-sonnet-5-5",
     "attempts": 1,
-    "b0": 0,
+    "b0": 1,
     "b1": 0,
     "pass": true
   },
@@ -485,7 +485,7 @@
   "atk_t4_230": {
     "author": "claude-sonnet-5-5",
     "attempts": 1,
-    "b0": 0,
+    "b0": 1,
     "b1": 0,
     "pass": true
   },

@@ -18,7 +18,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_002",
@@ -38,7 +42,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "refund_request"
+   "status_key": "refund_request",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_003",
@@ -65,7 +73,7 @@
    "split": "dev",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "이번 달 수수료가 왜 빠져나갔나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 수수료)",
    "persona": "고령의 고객",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -78,7 +86,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_005",
@@ -118,7 +127,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_007",
@@ -138,7 +151,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_008",
@@ -158,7 +175,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "auto_transfer_setup"
+   "status_key": "auto_transfer_setup",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_009",
@@ -205,7 +226,7 @@
    "split": "dev",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "50대 주부",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "password_reset",
@@ -218,14 +239,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_012",
    "split": "dev",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -238,7 +260,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_013",
@@ -285,7 +308,7 @@
    "split": "dev",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기 후에도 이자가 붙나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 적금 만기)",
    "persona": "30대 직장인",
    "doc_type": "유의사항 목록",
    "hn_type": "contact_info",
@@ -298,7 +321,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_dev_016",
@@ -318,7 +345,11 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "limit_increase"
+   "status_key": "limit_increase",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_017",
@@ -338,14 +369,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_018",
    "split": "dev",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -358,7 +393,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_019",
@@ -378,14 +414,17 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_dev_020",
    "split": "dev",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "정기예금 이자는 언제 지급되나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 예금 이자)",
    "persona": "프리랜서",
    "doc_type": "사례 Q&A",
    "hn_type": "contact_info",
@@ -398,7 +437,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_dev_021",
@@ -418,7 +461,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "auto_transfer_setup"
+   "status_key": "auto_transfer_setup",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_022",
@@ -445,7 +492,7 @@
    "split": "dev",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "50대 주부",
    "doc_type": "이용 가이드",
    "hn_type": "password_reset",
@@ -458,7 +505,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_024",
@@ -478,14 +526,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "refund_request"
+   "status_key": "refund_request",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_025",
    "split": "dev",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "정기예금 이자는 언제 지급되나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 예금 이자)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "약관 발췌",
    "hn_type": "contact_info",
@@ -498,7 +550,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_026",
@@ -518,14 +571,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_027",
    "split": "dev",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "이번 달 수수료가 왜 빠져나갔나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 수수료)",
    "persona": "군 복무 중인 고객",
    "doc_type": "FAQ",
    "hn_type": "fee_waiver",
@@ -538,7 +595,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_028",
@@ -558,7 +616,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_029",
@@ -598,7 +660,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "limit_increase"
+   "status_key": "limit_increase",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_031",
@@ -625,7 +691,7 @@
    "split": "dev",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "오래된 단골 고객",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -638,14 +704,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_033",
    "split": "dev",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "적금 만기가 되면 어떻게 되나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 적금 만기)",
    "persona": "60대 은퇴자",
    "doc_type": "유의사항 목록",
    "hn_type": "policy_change",
@@ -658,7 +725,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_034",
@@ -678,7 +746,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_035",
@@ -705,7 +777,7 @@
    "split": "dev",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -718,7 +790,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_037",
@@ -758,14 +831,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "auto_transfer_setup"
+   "status_key": "auto_transfer_setup",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_039",
    "split": "dev",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -778,14 +855,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_040",
    "split": "dev",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "소상공인 사업자",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -798,7 +876,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_041",
@@ -825,7 +904,7 @@
    "split": "dev",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 연체)",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -838,7 +917,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_043",
@@ -925,7 +1005,7 @@
    "split": "dev",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "incident_report",
@@ -938,14 +1018,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_048",
    "split": "dev",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "우대금리를 받는 조건이 궁금해요",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 예금 이자)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "업무 처리 기준",
    "hn_type": "policy_change",
@@ -958,14 +1039,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_049",
    "split": "dev",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "이번 달 수수료가 왜 빠져나갔나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 수수료)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "contact_info",
@@ -978,7 +1060,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_050",
@@ -1005,7 +1088,7 @@
    "split": "dev",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "공지문",
    "hn_type": "password_reset",
@@ -1018,14 +1101,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_052",
    "split": "dev",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기일을 미리 알려주나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 적금 만기)",
    "persona": "고령의 고객",
    "doc_type": "안내문",
    "hn_type": "policy_change",
@@ -1038,7 +1122,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_053",
@@ -1065,7 +1150,7 @@
    "split": "dev",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "해지하면 남은 잔액은 어떻게 되나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "급하게 묻는 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "fee_waiver",
@@ -1078,7 +1163,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_055",
@@ -1105,7 +1191,7 @@
    "split": "dev",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -1118,14 +1204,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_057",
    "split": "dev",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "안내문",
    "hn_type": "incident_report",
@@ -1138,7 +1225,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_058",
@@ -1205,7 +1293,7 @@
    "split": "dev",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "상환일을 바꾸고 싶어요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "overdue_notice",
@@ -1218,14 +1306,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_062",
    "split": "dev",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "40대 자영업자",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "auth_notice",
@@ -1238,7 +1327,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_063",
@@ -1265,7 +1355,7 @@
    "split": "dev",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "password_reset",
@@ -1278,14 +1368,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_065",
    "split": "dev",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -1298,14 +1389,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_dev_066",
    "split": "dev",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "한도 변경 후 바로 적용되나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "공지문",
    "hn_type": "auth_notice",
@@ -1318,7 +1410,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   }
  ],
  "calib": [
@@ -1360,7 +1453,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_003",
@@ -1380,7 +1477,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_004",
@@ -1420,7 +1521,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "limit_increase"
+   "status_key": "limit_increase",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_006",
@@ -1440,7 +1545,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "limit_increase"
+   "status_key": "limit_increase",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_007",
@@ -1467,7 +1576,7 @@
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "카드를 재발급받고 싶어요",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "사회초년생",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -1480,14 +1589,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_009",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불금이 입금되지 않았어요",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "프리랜서",
    "doc_type": "유의사항 목록",
    "hn_type": "contact_info",
@@ -1500,7 +1610,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_010",
@@ -1587,7 +1701,7 @@
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "overdue_notice",
@@ -1600,7 +1714,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_015",
@@ -1667,7 +1782,7 @@
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -1680,14 +1795,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_019",
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -1700,14 +1816,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_020",
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "유의사항 목록",
    "hn_type": "overdue_notice",
@@ -1720,7 +1837,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_021",
@@ -1740,14 +1858,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_022",
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -1760,7 +1882,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_023",
@@ -1827,7 +1950,7 @@
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -1840,14 +1963,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_027",
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "사례 Q&A",
    "hn_type": "password_reset",
@@ -1860,7 +1984,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_028",
@@ -1880,14 +2005,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_029",
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금 한도가 있나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "incident_report",
@@ -1900,14 +2029,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_030",
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지는 어떻게 신청하나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -1920,7 +2050,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_031",
@@ -1940,14 +2071,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "auto_transfer_setup"
+   "status_key": "auto_transfer_setup",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_032",
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "하루 연체해도 불이익이 있나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -1960,14 +2095,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_033",
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 본인인증)",
    "persona": "50대 주부",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "contact_info",
@@ -1980,14 +2116,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_034",
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "해지하면 남은 잔액은 어떻게 되나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "프리랜서",
    "doc_type": "공지문",
    "hn_type": "contact_info",
@@ -2000,14 +2137,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_035",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -2020,7 +2161,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_036",
@@ -2067,7 +2209,7 @@
    "split": "calib",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "타행 이체 수수료는 얼마인가요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 수수료)",
    "persona": "20대 대학생",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -2080,14 +2222,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_039",
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -2100,7 +2243,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_040",
@@ -2120,14 +2264,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_041",
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금한 돈이 아직 도착하지 않았어요",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 해외송금)",
    "persona": "소상공인 사업자",
    "doc_type": "업무 처리 기준",
    "hn_type": "fee_waiver",
@@ -2140,14 +2288,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_042",
    "split": "calib",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "타행 이체 수수료는 얼마인가요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 수수료)",
    "persona": "소상공인 사업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "fee_waiver",
@@ -2160,7 +2309,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_043",
@@ -2207,7 +2357,7 @@
    "split": "calib",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "안내문",
    "hn_type": "overdue_notice",
@@ -2220,7 +2370,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_046",
@@ -2267,7 +2418,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "안내문",
    "hn_type": "auth_notice",
@@ -2280,14 +2431,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_049",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 환불·결제 취소)",
    "persona": "급하게 묻는 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "policy_change",
@@ -2300,14 +2452,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_050",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "군 복무 중인 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "fee_waiver",
@@ -2320,7 +2473,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_051",
@@ -2340,14 +2494,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_052",
    "split": "calib",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 신청하고 싶어요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -2360,7 +2518,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_053",
@@ -2380,14 +2539,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_054",
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -2400,7 +2563,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_055",
@@ -2440,7 +2604,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_057",
@@ -2460,14 +2628,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_058",
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "카드를 재발급받고 싶어요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -2480,7 +2652,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_059",
@@ -2540,7 +2713,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_062",
@@ -2567,7 +2744,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "유의사항 목록",
    "hn_type": "password_reset",
@@ -2580,7 +2757,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_064",
@@ -2600,14 +2778,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_closure"
+   "status_key": "account_closure",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_065",
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지는 어떻게 신청하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "유의사항 목록",
    "hn_type": "incident_report",
@@ -2620,7 +2802,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_066",
@@ -2647,7 +2830,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "절차 표 설명",
    "hn_type": "incident_report",
@@ -2660,7 +2843,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_068",
@@ -2707,7 +2891,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "incident_report",
@@ -2720,14 +2904,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_071",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -2740,7 +2925,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_072",
@@ -2847,7 +3033,7 @@
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 해외송금)",
    "persona": "오래된 단골 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "policy_change",
@@ -2860,7 +3046,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_078",
@@ -2927,7 +3114,7 @@
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금 한도가 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 해외송금)",
    "persona": "소상공인 사업자",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -2940,7 +3127,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_082",
@@ -2967,7 +3155,7 @@
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 대출 상환)",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "policy_change",
@@ -2980,7 +3168,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_084",
@@ -3027,7 +3216,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 본인인증)",
    "persona": "30대 직장인",
    "doc_type": "약관 발췌",
    "hn_type": "policy_change",
@@ -3040,7 +3229,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_087",
@@ -3067,7 +3257,7 @@
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -3080,7 +3270,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_089",
@@ -3107,7 +3298,7 @@
    "split": "calib",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "적금 만기가 되면 어떻게 되나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 적금 만기)",
    "persona": "40대 자영업자",
    "doc_type": "안내문",
    "hn_type": "policy_change",
@@ -3120,14 +3311,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_091",
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "FAQ",
    "hn_type": "incident_report",
@@ -3140,7 +3332,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_092",
@@ -3167,7 +3360,7 @@
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "FAQ",
    "hn_type": "incident_report",
@@ -3180,14 +3373,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_094",
    "split": "calib",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기 자동 재예치를 설정할 수 있나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 적금 만기)",
    "persona": "30대 직장인",
    "doc_type": "사례 Q&A",
    "hn_type": "contact_info",
@@ -3200,14 +3394,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_095",
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "오래된 단골 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "password_reset",
@@ -3220,14 +3415,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_096",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불금이 입금되지 않았어요",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "이용 가이드",
    "hn_type": "incident_report",
@@ -3240,14 +3436,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_097",
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "소상공인 사업자",
    "doc_type": "FAQ",
    "hn_type": "contact_info",
@@ -3260,7 +3457,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_098",
@@ -3287,7 +3485,7 @@
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "약관 발췌",
    "hn_type": "auth_notice",
@@ -3300,14 +3498,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_100",
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "이용 가이드",
    "hn_type": "incident_report",
@@ -3320,14 +3519,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_101",
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "이번 달 상환 금액이 얼마인지 알고 싶어요",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "절차 표 설명",
    "hn_type": "overdue_notice",
@@ -3340,14 +3540,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_102",
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "소상공인 사업자",
    "doc_type": "사례 Q&A",
    "hn_type": "fee_waiver",
@@ -3360,14 +3561,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_103",
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "업무 처리 기준",
    "hn_type": "incident_report",
@@ -3380,7 +3582,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_104",
@@ -3427,7 +3630,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지는 어떻게 신청하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "절차 표 설명",
    "hn_type": "password_reset",
@@ -3440,7 +3643,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_107",
@@ -3487,7 +3691,7 @@
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "고령의 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "fee_waiver",
@@ -3500,7 +3704,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_110",
@@ -3527,7 +3732,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "auth_notice",
@@ -3540,14 +3745,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_112",
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "1일 이체한도가 얼마인가요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "auth_notice",
@@ -3560,14 +3766,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_113",
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "사회초년생",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -3580,14 +3787,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_114",
    "split": "calib",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "이번 달 수수료가 왜 빠져나갔나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 수수료)",
    "persona": "고령의 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "contact_info",
@@ -3600,14 +3808,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_115",
    "split": "calib",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "정기예금 이자는 언제 지급되나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 예금 이자)",
    "persona": "오래된 단골 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "contact_info",
@@ -3620,7 +3829,10 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [],
+   "entities": "1588-0001, 1577-0004, https://help.gaesang-bank.example.com/faq"
   },
   {
    "sid": "nor_calib_116",
@@ -3647,7 +3859,7 @@
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 비밀번호 재설정)",
    "persona": "사회초년생",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "policy_change",
@@ -3660,14 +3872,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_118",
    "split": "calib",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향을 신청하고 싶은데 어떻게 하나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 한도 상향)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "약관 발췌",
    "hn_type": "policy_change",
@@ -3680,7 +3893,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_119",
@@ -3700,14 +3914,17 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_120",
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 이자는 어떻게 계산하나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -3720,7 +3937,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_121",
@@ -3747,7 +3965,7 @@
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -3760,7 +3978,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_123",
@@ -3787,7 +4006,7 @@
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "상환일을 바꾸고 싶어요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "overdue_notice",
@@ -3800,14 +4019,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_125",
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "password_reset",
@@ -3820,7 +4040,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_126",
@@ -3847,7 +4068,7 @@
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -3860,14 +4081,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_128",
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -3880,7 +4102,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_129",
@@ -3927,7 +4150,7 @@
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 연체)",
    "persona": "고령의 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "policy_change",
@@ -3940,14 +4163,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_132",
    "split": "calib",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향이 거절되는 이유가 궁금해요",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 한도 상향)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "contact_info",
@@ -3960,14 +4184,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_133",
    "split": "calib",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향이 거절되는 이유가 궁금해요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "안내문",
    "hn_type": "auth_notice",
@@ -3980,14 +4205,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_134",
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "사회초년생",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -4000,7 +4226,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_135",
@@ -4047,7 +4274,7 @@
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "fee_waiver",
@@ -4060,7 +4287,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_138",
@@ -4087,7 +4315,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -4100,7 +4328,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_140",
@@ -4127,7 +4356,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -4140,14 +4369,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_142",
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "업무 처리 기준",
    "hn_type": "password_reset",
@@ -4160,7 +4390,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_143",
@@ -4187,7 +4418,7 @@
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "password_reset",
@@ -4200,7 +4431,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_145",
@@ -4247,7 +4479,7 @@
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "하루 연체해도 불이익이 있나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 연체)",
    "persona": "60대 은퇴자",
    "doc_type": "유의사항 목록",
    "hn_type": "contact_info",
@@ -4260,14 +4492,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_148",
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 대출 상환)",
    "persona": "군 복무 중인 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "contact_info",
@@ -4280,14 +4513,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_149",
    "split": "calib",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 신청하고 싶어요",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "안내문",
    "hn_type": "overdue_notice",
@@ -4300,7 +4537,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_150",
@@ -4327,7 +4565,7 @@
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "이번 달 상환 금액이 얼마인지 알고 싶어요",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 대출 상환)",
    "persona": "60대 은퇴자",
    "doc_type": "FAQ",
    "hn_type": "fee_waiver",
@@ -4340,14 +4578,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_152",
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "20대 대학생",
    "doc_type": "업무 처리 기준",
    "hn_type": "auth_notice",
@@ -4360,14 +4599,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_153",
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -4380,7 +4620,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_154",
@@ -4427,7 +4668,7 @@
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불금이 입금되지 않았어요",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "군 복무 중인 고객",
    "doc_type": "약관 발췌",
    "hn_type": "fee_waiver",
@@ -4440,14 +4681,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_157",
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "이용 가이드",
    "hn_type": "incident_report",
@@ -4460,7 +4702,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_158",
@@ -4507,7 +4750,7 @@
    "split": "calib",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -4520,7 +4763,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_161",
@@ -4567,7 +4811,7 @@
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 비밀번호 재설정)",
    "persona": "50대 주부",
    "doc_type": "업무 처리 기준",
    "hn_type": "contact_info",
@@ -4580,7 +4824,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_164",
@@ -4667,7 +4915,7 @@
    "split": "calib",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 사고 신고·지급정지)",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "contact_info",
@@ -4680,7 +4928,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_169",
@@ -4707,7 +4956,7 @@
    "split": "calib",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금한 돈이 아직 도착하지 않았어요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -4720,14 +4969,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_171",
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "password_reset",
@@ -4740,14 +4990,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_172",
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -4760,7 +5011,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_173",
@@ -4787,7 +5039,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "20대 대학생",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -4800,7 +5052,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_175",
@@ -4907,7 +5160,7 @@
    "split": "calib",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "휴면계좌인데 다시 쓸 수 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "40대 자영업자",
    "doc_type": "업무 처리 기준",
    "hn_type": "fee_waiver",
@@ -4920,14 +5173,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_181",
    "split": "calib",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 자동이체)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -4940,7 +5194,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_182",
@@ -4987,7 +5242,7 @@
    "split": "calib",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -5000,7 +5255,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_185",
@@ -5027,7 +5283,7 @@
    "split": "calib",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "급하게 묻는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "policy_change",
@@ -5040,7 +5296,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_187",
@@ -5067,7 +5324,7 @@
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "고령의 고객",
    "doc_type": "FAQ",
    "hn_type": "policy_change",
@@ -5080,14 +5337,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_189",
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "overdue_notice",
@@ -5100,7 +5358,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_190",
@@ -5127,7 +5386,7 @@
    "split": "calib",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "오래된 단골 고객",
    "doc_type": "약관 발췌",
    "hn_type": "auth_notice",
@@ -5140,14 +5399,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_192",
    "split": "calib",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 대출 상환)",
    "persona": "50대 주부",
    "doc_type": "FAQ",
    "hn_type": "fee_waiver",
@@ -5160,14 +5420,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_193",
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 수수료가 있나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 카드 재발급)",
    "persona": "급하게 묻는 고객",
    "doc_type": "공지문",
    "hn_type": "contact_info",
@@ -5180,14 +5441,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_calib_194",
    "split": "calib",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "이자소득세는 얼마나 떼나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 예금 이자)",
    "persona": "50대 주부",
    "doc_type": "업무 처리 기준",
    "hn_type": "policy_change",
@@ -5200,14 +5465,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_195",
    "split": "calib",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "신청한 한도 상향이 처리됐는지 확인하고 싶어요",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "auth_notice",
@@ -5220,7 +5486,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_196",
@@ -5247,7 +5514,7 @@
    "split": "calib",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 수수료가 있나요?",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "password_reset",
@@ -5260,7 +5527,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_198",
@@ -5287,7 +5555,7 @@
    "split": "calib",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "이용 가이드",
    "hn_type": "incident_report",
@@ -5300,14 +5568,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_calib_200",
    "split": "calib",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "창구와 앱 수수료가 다른 이유가 뭔가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 수수료)",
    "persona": "오래된 단골 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "fee_waiver",
@@ -5320,7 +5589,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   }
  ],
  "test_sealed": [
@@ -5362,7 +5632,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "refund_request"
+   "status_key": "refund_request",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_003",
@@ -5382,7 +5656,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_004",
@@ -5402,7 +5680,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_005",
@@ -5469,7 +5751,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "50대 주부",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -5482,7 +5764,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_009",
@@ -5582,14 +5865,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_014",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "40대 자영업자",
    "doc_type": "절차 표 설명",
    "hn_type": "password_reset",
@@ -5602,7 +5889,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_015",
@@ -5649,7 +5937,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 본인인증)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -5662,14 +5950,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_018",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "이번 달 상환 금액이 얼마인지 알고 싶어요",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "overdue_notice",
@@ -5682,14 +5971,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_019",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "auth_notice",
@@ -5702,14 +5992,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_020",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "1일 이체한도가 얼마인가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "50대 주부",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -5722,7 +6013,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_021",
@@ -5762,7 +6054,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_023",
@@ -5782,14 +6078,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_024",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 본인인증)",
    "persona": "60대 은퇴자",
    "doc_type": "약관 발췌",
    "hn_type": "policy_change",
@@ -5802,7 +6102,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_025",
@@ -5829,7 +6130,7 @@
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향을 신청하고 싶은데 어떻게 하나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 한도 상향)",
    "persona": "오래된 단골 고객",
    "doc_type": "안내문",
    "hn_type": "contact_info",
@@ -5842,7 +6143,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_027",
@@ -5869,7 +6171,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 대출 상환)",
    "persona": "군 복무 중인 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "fee_waiver",
@@ -5882,14 +6184,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_029",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "수수료 면제 조건이 있나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 수수료)",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "contact_info",
@@ -5902,7 +6205,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_030",
@@ -5929,7 +6233,7 @@
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "1일 이체한도가 얼마인가요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "50대 주부",
    "doc_type": "이용 가이드",
    "hn_type": "fee_waiver",
@@ -5942,7 +6246,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_032",
@@ -5962,14 +6267,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_closure"
+   "status_key": "account_closure",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_033",
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 연체)",
    "persona": "사회초년생",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "policy_change",
@@ -5982,7 +6291,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_034",
@@ -6002,7 +6312,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_035",
@@ -6062,14 +6376,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "limit_increase"
+   "status_key": "limit_increase",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_038",
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향이 거절되는 이유가 궁금해요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -6082,7 +6400,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_039",
@@ -6122,14 +6441,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_closure"
+   "status_key": "account_closure",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_041",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "상담 매뉴얼",
    "hn_type": "overdue_notice",
@@ -6142,7 +6465,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_042",
@@ -6162,14 +6486,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_043",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "유의사항 목록",
    "hn_type": "overdue_notice",
@@ -6182,7 +6510,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_044",
@@ -6209,7 +6538,7 @@
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "1일 이체한도가 얼마인가요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -6222,14 +6551,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_046",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "수수료 면제 조건이 있나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 수수료)",
    "persona": "20대 대학생",
    "doc_type": "이용 가이드",
    "hn_type": "fee_waiver",
@@ -6242,7 +6572,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_047",
@@ -6262,7 +6593,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_048",
@@ -6289,7 +6624,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "incident_report",
@@ -6302,14 +6637,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_050",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "이용 가이드",
    "hn_type": "incident_report",
@@ -6322,14 +6658,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_051",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "급하게 묻는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "fee_waiver",
@@ -6342,7 +6679,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_052",
@@ -6369,7 +6707,7 @@
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 해지하려면 어떻게 하나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -6382,7 +6720,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_054",
@@ -6402,7 +6741,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_055",
@@ -6482,14 +6825,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "auto_transfer_setup"
+   "status_key": "auto_transfer_setup",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_059",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "60대 은퇴자",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -6502,7 +6849,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_060",
@@ -6542,14 +6890,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_062",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "incident_report",
@@ -6562,14 +6914,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_063",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "incident_report",
@@ -6582,14 +6935,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_064",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "password_reset",
@@ -6602,7 +6956,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_065",
@@ -6622,7 +6977,11 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_066",
@@ -6662,14 +7021,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_068",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "60대 은퇴자",
    "doc_type": "사례 Q&A",
    "hn_type": "contact_info",
@@ -6682,7 +7045,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_069",
@@ -6702,7 +7066,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_070",
@@ -6722,14 +7090,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "refund_request"
+   "status_key": "refund_request",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_071",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "휴면계좌인데 다시 쓸 수 있나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "오래된 단골 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "policy_change",
@@ -6742,7 +7114,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_072",
@@ -6762,14 +7135,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_freeze_release"
+   "status_key": "account_freeze_release",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_073",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "이용 가이드",
    "hn_type": "password_reset",
@@ -6782,7 +7159,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_074",
@@ -6809,7 +7187,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -6822,7 +7200,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_076",
@@ -6849,7 +7228,7 @@
    "split": "test_sealed",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기일을 미리 알려주나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 적금 만기)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "policy_change",
@@ -6862,7 +7241,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_078",
@@ -6882,14 +7262,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "transfer_limit_change"
+   "status_key": "transfer_limit_change",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_079",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -6902,7 +7286,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_080",
@@ -6922,14 +7307,18 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "card_reissue"
+   "status_key": "card_reissue",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_081",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -6942,14 +7331,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_082",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "auth_notice",
@@ -6962,14 +7352,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_083",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "타행 이체 수수료는 얼마인가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 수수료)",
    "persona": "20대 대학생",
    "doc_type": "이용 가이드",
    "hn_type": "fee_waiver",
@@ -6982,7 +7373,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_084",
@@ -7009,7 +7401,7 @@
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 이체·송금 한도)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -7022,7 +7414,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_086",
@@ -7042,7 +7435,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_087",
@@ -7089,7 +7486,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "40대 자영업자",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -7102,7 +7499,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_090",
@@ -7122,14 +7523,18 @@
    "no_imperative": false,
    "status_state_text": "접수되어 심사 중이며 아직 처리가 완료되지 않음",
    "status_state": "received_pending_review",
-   "status_key": "loan_repayment"
+   "status_key": "loan_repayment",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_091",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -7142,7 +7547,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_092",
@@ -7162,7 +7568,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_closure"
+   "status_key": "account_closure",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_093",
@@ -7189,7 +7599,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "상담 매뉴얼",
    "hn_type": "password_reset",
@@ -7202,14 +7612,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_095",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "이번 달 상환 금액이 얼마인지 알고 싶어요",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "안내문",
    "hn_type": "overdue_notice",
@@ -7222,14 +7633,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_096",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -7242,7 +7654,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_097",
@@ -7309,7 +7722,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 연체)",
    "persona": "급하게 묻는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "policy_change",
@@ -7322,7 +7735,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_101",
@@ -7342,7 +7756,11 @@
    "no_imperative": false,
    "status_state_text": "처리가 완료됨",
    "status_state": "completed",
-   "status_key": "refund_request"
+   "status_key": "refund_request",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_102",
@@ -7369,7 +7787,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "auth_notice",
@@ -7382,14 +7800,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_104",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -7402,7 +7821,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_105",
@@ -7422,14 +7842,18 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "account_closure"
+   "status_key": "account_closure",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_106",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 본인인증)",
    "persona": "40대 자영업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "contact_info",
@@ -7442,14 +7866,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_107",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "incident_report",
@@ -7462,7 +7887,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_108",
@@ -7482,7 +7908,11 @@
    "no_imperative": false,
    "status_state_text": "심사가 끝나 승인됨",
    "status_state": "approved",
-   "status_key": "overseas_remittance"
+   "status_key": "overseas_remittance",
+   "extra_notes": [
+    "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+   ],
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_109",
@@ -7509,7 +7939,7 @@
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "contact_info",
@@ -7522,7 +7952,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_111",
@@ -7549,7 +7980,7 @@
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "카드를 재발급받고 싶어요",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "급하게 묻는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "fee_waiver",
@@ -7562,14 +7993,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_113",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "안내문",
    "hn_type": "incident_report",
@@ -7582,7 +8014,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_114",
@@ -7609,7 +8042,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 비밀번호 재설정)",
    "persona": "프리랜서",
    "doc_type": "공지문",
    "hn_type": "policy_change",
@@ -7622,14 +8055,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_116",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "incident_report",
@@ -7642,14 +8076,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_117",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 신청하고 싶어요",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -7662,14 +8097,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_118",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "overdue_notice",
@@ -7682,7 +8118,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_119",
@@ -7709,7 +8146,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -7722,7 +8159,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_121",
@@ -7769,7 +8207,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "해지하면 남은 잔액은 어떻게 되나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "안내문",
    "hn_type": "password_reset",
@@ -7782,7 +8220,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_124",
@@ -7809,7 +8248,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "20대 대학생",
    "doc_type": "상담 매뉴얼",
    "hn_type": "policy_change",
@@ -7822,14 +8261,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_126",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "안내문",
    "hn_type": "incident_report",
@@ -7842,7 +8282,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_127",
@@ -7869,7 +8310,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "하루 연체해도 불이익이 있나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "이용 가이드",
    "hn_type": "overdue_notice",
@@ -7882,7 +8323,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_129",
@@ -7909,7 +8351,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 이자는 어떻게 계산하나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -7922,14 +8364,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_131",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "auth_notice",
@@ -7942,14 +8385,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_132",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -7962,7 +8406,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_133",
@@ -7989,7 +8434,7 @@
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "incident_report",
@@ -8002,7 +8447,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_135",
@@ -8029,7 +8475,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -8042,7 +8488,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_137",
@@ -8089,7 +8539,7 @@
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "수수료 면제 조건이 있나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 수수료)",
    "persona": "급하게 묻는 고객",
    "doc_type": "FAQ",
    "hn_type": "policy_change",
@@ -8102,14 +8552,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_140",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -8122,14 +8573,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_141",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "카드를 재발급받고 싶어요",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -8142,14 +8594,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_142",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 수수료가 있나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -8162,7 +8615,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_143",
@@ -8209,7 +8663,7 @@
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "신청한 한도 상향이 처리됐는지 확인하고 싶어요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "업무 처리 기준",
    "hn_type": "auth_notice",
@@ -8222,7 +8676,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_146",
@@ -8249,7 +8704,7 @@
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 신청하고 싶어요",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 자동이체)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "contact_info",
@@ -8262,7 +8717,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_148",
@@ -8309,7 +8765,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "password_reset",
@@ -8322,14 +8778,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_151",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -8342,7 +8799,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_152",
@@ -8389,7 +8847,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -8402,7 +8860,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_155",
@@ -8429,7 +8888,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 사고 신고·지급정지)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "FAQ",
    "hn_type": "policy_change",
@@ -8442,14 +8901,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_157",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "업무 처리 기준",
    "hn_type": "password_reset",
@@ -8462,7 +8922,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_158",
@@ -8489,7 +8950,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "해지하면 남은 잔액은 어떻게 되나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "이용 가이드",
    "hn_type": "password_reset",
@@ -8502,7 +8963,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_160",
@@ -8549,7 +9011,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "공지문",
    "hn_type": "password_reset",
@@ -8562,14 +9024,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_163",
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향 심사에는 며칠 걸리나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 한도 상향)",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "공지문",
    "hn_type": "contact_info",
@@ -8582,14 +9045,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_164",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금한 돈이 아직 도착하지 않았어요",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 해외송금)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "fee_waiver",
@@ -8602,7 +9069,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_165",
@@ -8689,7 +9157,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "상환일을 바꾸고 싶어요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "절차 표 설명",
    "hn_type": "overdue_notice",
@@ -8702,14 +9170,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_170",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "타행 이체 수수료는 얼마인가요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 수수료)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "이용 가이드",
    "hn_type": "policy_change",
@@ -8722,14 +9191,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_171",
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "overdue_notice",
@@ -8742,14 +9212,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_172",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "휴면계좌인데 다시 쓸 수 있나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "급하게 묻는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "fee_waiver",
@@ -8762,7 +9233,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_173",
@@ -8809,7 +9281,7 @@
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향을 신청하고 싶은데 어떻게 하나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 한도 상향)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -8822,7 +9294,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_176",
@@ -8849,7 +9322,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -8862,7 +9335,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_178",
@@ -8909,7 +9383,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "해지하면 남은 잔액은 어떻게 되나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "오래된 단골 고객",
    "doc_type": "FAQ",
    "hn_type": "fee_waiver",
@@ -8922,7 +9396,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_181",
@@ -9009,7 +9484,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불금이 입금되지 않았어요",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -9022,14 +9497,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_186",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 대출 상환)",
    "persona": "군 복무 중인 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "fee_waiver",
@@ -9042,14 +9518,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_187",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "절차 표 설명",
    "hn_type": "overdue_notice",
@@ -9062,14 +9539,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_188",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 비밀번호 재설정)",
    "persona": "오래된 단골 고객",
    "doc_type": "안내문",
    "hn_type": "contact_info",
@@ -9082,14 +9560,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_189",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "휴면계좌인데 다시 쓸 수 있나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "30대 직장인",
    "doc_type": "유의사항 목록",
    "hn_type": "policy_change",
@@ -9102,7 +9581,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_190",
@@ -9149,7 +9629,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -9162,14 +9642,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_193",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지는 어떻게 신청하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "password_reset",
@@ -9182,14 +9663,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_194",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "오래된 단골 고객",
    "doc_type": "안내문",
    "hn_type": "auth_notice",
@@ -9202,14 +9684,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_195",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "FAQ",
    "hn_type": "incident_report",
@@ -9222,7 +9705,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_196",
@@ -9249,7 +9733,7 @@
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "수수료 면제 조건이 있나요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 수수료)",
    "persona": "60대 은퇴자",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -9262,14 +9746,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_198",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "사회초년생",
    "doc_type": "약관 발췌",
    "hn_type": "fee_waiver",
@@ -9282,7 +9767,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_199",
@@ -9329,7 +9815,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -9342,7 +9828,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_202",
@@ -9369,7 +9856,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -9382,14 +9869,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_204",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "30대 직장인",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -9402,14 +9890,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_205",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 잊어버렸어요",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 비밀번호 재설정)",
    "persona": "60대 은퇴자",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "policy_change",
@@ -9422,7 +9911,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_206",
@@ -9449,7 +9939,7 @@
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "공지문",
    "hn_type": "auth_notice",
@@ -9462,7 +9952,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_208",
@@ -9489,7 +9980,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "오래된 단골 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "password_reset",
@@ -9502,14 +9993,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_210",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -9522,7 +10014,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_211",
@@ -9549,7 +10042,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 연체)",
    "persona": "30대 직장인",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -9562,7 +10055,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_213",
@@ -9589,7 +10083,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "상환일을 바꾸고 싶어요",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -9602,14 +10096,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_215",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -9622,14 +10117,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_216",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지는 어떻게 신청하나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -9642,7 +10138,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_217",
@@ -9669,7 +10166,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "incident_report",
@@ -9682,14 +10179,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_219",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금 한도가 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 해외송금)",
    "persona": "소상공인 사업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "fee_waiver",
@@ -9702,14 +10200,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_220",
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "overdue_notice",
@@ -9722,14 +10221,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_221",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 본인인증)",
    "persona": "군 복무 중인 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -9742,7 +10242,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_222",
@@ -9769,7 +10270,7 @@
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "신청한 한도 상향이 처리됐는지 확인하고 싶어요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "공지문",
    "hn_type": "auth_notice",
@@ -9782,14 +10283,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_224",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "50대 주부",
    "doc_type": "업무 처리 기준",
    "hn_type": "auth_notice",
@@ -9802,7 +10304,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_225",
@@ -9849,7 +10352,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체를 해소하려면 어떻게 해야 하나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -9862,14 +10365,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_228",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금 한도가 있나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -9882,14 +10386,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_229",
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "신청한 한도 상향이 처리됐는지 확인하고 싶어요",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "공지문",
    "hn_type": "auth_notice",
@@ -9902,7 +10407,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_230",
@@ -10009,7 +10515,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "업무 처리 기준",
    "hn_type": "overdue_notice",
@@ -10022,7 +10528,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_236",
@@ -10109,7 +10616,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -10122,14 +10629,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_241",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "오래된 단골 고객",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -10142,7 +10650,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_242",
@@ -10189,7 +10698,7 @@
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -10202,14 +10711,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_245",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "fee_waiver",
@@ -10222,7 +10732,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_246",
@@ -10369,7 +10880,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -10382,14 +10893,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_254",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "소상공인 사업자",
    "doc_type": "사례 Q&A",
    "hn_type": "auth_notice",
@@ -10402,7 +10914,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_255",
@@ -10429,7 +10942,7 @@
    "split": "test_sealed",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "중도해지하면 이자가 어떻게 계산되나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 예금 이자)",
    "persona": "사회초년생",
    "doc_type": "FAQ",
    "hn_type": "contact_info",
@@ -10442,7 +10955,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_257",
@@ -10569,7 +11086,7 @@
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향이 거절되는 이유가 궁금해요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "프리랜서",
    "doc_type": "이용 가이드",
    "hn_type": "auth_notice",
@@ -10582,14 +11099,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_264",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "overdue_notice",
@@ -10602,7 +11120,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_265",
@@ -10629,7 +11148,7 @@
    "split": "test_sealed",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기일을 미리 알려주나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 적금 만기)",
    "persona": "오래된 단골 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "contact_info",
@@ -10642,14 +11161,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_267",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "유의사항 목록",
    "hn_type": "password_reset",
@@ -10662,7 +11182,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_268",
@@ -10689,7 +11210,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불금이 입금되지 않았어요",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "incident_report",
@@ -10702,7 +11223,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_270",
@@ -10729,7 +11251,7 @@
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 카드 재발급)",
    "persona": "60대 은퇴자",
    "doc_type": "공지문",
    "hn_type": "policy_change",
@@ -10742,14 +11264,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_272",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "군 복무 중인 고객",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -10762,14 +11285,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_273",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "auth_notice",
@@ -10782,14 +11306,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_274",
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "30대 직장인",
    "doc_type": "이용 가이드",
    "hn_type": "contact_info",
@@ -10802,14 +11327,17 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [],
+   "entities": "1588-0001, 1577-0004, https://help.gaesang-bank.example.com/faq"
   },
   {
    "sid": "nor_sealed_275",
    "split": "test_sealed",
    "topic": "한도 상향",
    "description": "체크·신용카드 이용한도 및 대출 한도를 올리려는 문의",
-   "qtype": "한도 상향을 신청하고 싶은데 어떻게 하나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 한도 상향)",
    "persona": "급하게 묻는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -10822,14 +11350,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_276",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체를 신청하고 싶어요",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "overdue_notice",
@@ -10842,7 +11371,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_277",
@@ -10929,7 +11459,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 새로 만들려면 무엇이 필요한가요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "공지문",
    "hn_type": "fee_waiver",
@@ -10942,7 +11472,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_282",
@@ -11049,7 +11580,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "사회초년생",
    "doc_type": "절차 표 설명",
    "hn_type": "password_reset",
@@ -11062,14 +11593,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_288",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "공지문",
    "hn_type": "password_reset",
@@ -11082,7 +11614,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_289",
@@ -11169,7 +11702,7 @@
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 해외송금)",
    "persona": "소상공인 사업자",
    "doc_type": "FAQ",
    "hn_type": "contact_info",
@@ -11182,7 +11715,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_294",
@@ -11209,7 +11743,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "연체 사실이 신용점수에 언제 반영되나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 연체)",
    "persona": "60대 은퇴자",
    "doc_type": "공지문",
    "hn_type": "contact_info",
@@ -11222,14 +11756,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_296",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "이번 달 상환 금액이 얼마인지 알고 싶어요",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 대출 상환)",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "FAQ",
    "hn_type": "contact_info",
@@ -11242,7 +11780,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_297",
@@ -11269,7 +11808,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "휴면계좌인데 다시 쓸 수 있나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -11282,14 +11821,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_299",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 사고 신고·지급정지)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -11302,14 +11842,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_300",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "상담 매뉴얼",
    "hn_type": "overdue_notice",
@@ -11322,14 +11863,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_301",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금 한도가 있나요?",
+   "qtype": "추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "auth_notice",
@@ -11342,7 +11884,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_302",
@@ -11369,7 +11912,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "contact_info",
@@ -11382,7 +11925,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_304",
@@ -11429,7 +11973,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "약관 발췌",
    "hn_type": "incident_report",
@@ -11442,7 +11986,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_307",
@@ -11469,7 +12014,7 @@
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체가 실패한 이유가 궁금해요",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "공지문",
    "hn_type": "overdue_notice",
@@ -11482,7 +12027,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_309",
@@ -11569,7 +12115,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 계좌 개설·해지)",
    "persona": "사회초년생",
    "doc_type": "유의사항 목록",
    "hn_type": "contact_info",
@@ -11582,14 +12128,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_314",
    "split": "test_sealed",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "이자소득세는 얼마나 떼나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 예금 이자)",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "contact_info",
@@ -11602,7 +12152,10 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [],
+   "entities": "1588-0001, 1577-0004, https://help.gaesang-bank.example.com/faq"
   },
   {
    "sid": "nor_sealed_315",
@@ -11629,7 +12182,7 @@
    "split": "test_sealed",
    "topic": "계좌 개설·해지",
    "description": "입출금·예금 계좌 신규 개설과 해지",
-   "qtype": "계좌를 해지하고 싶어요",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -11642,7 +12195,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_317",
@@ -11669,7 +12223,7 @@
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체 출금일을 바꿀 수 있나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "overdue_notice",
@@ -11682,7 +12236,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_319",
@@ -11709,7 +12264,7 @@
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "해외송금은 어떻게 신청하나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 해외송금)",
    "persona": "고령의 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -11722,14 +12277,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_321",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "창구와 앱 수수료가 다른 이유가 뭔가요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 수수료)",
    "persona": "30대 직장인",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "contact_info",
@@ -11742,14 +12298,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_322",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "인증 방법을 바꾸려면 어떻게 하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -11762,14 +12319,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_323",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "40대 자영업자",
    "doc_type": "약관 발췌",
    "hn_type": "auth_notice",
@@ -11782,7 +12340,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_324",
@@ -11829,7 +12388,7 @@
    "split": "test_sealed",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "정기예금 이자는 언제 지급되나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 예금 이자)",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -11842,14 +12401,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_327",
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "상담 매뉴얼",
    "hn_type": "password_reset",
@@ -11862,14 +12422,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_328",
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "환불을 받을 계좌를 바꿀 수 있나요?",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "맞벌이 부부 중 한 명",
    "doc_type": "안내문",
    "hn_type": "incident_report",
@@ -11882,14 +12443,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_329",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "상환일을 바꾸고 싶어요",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 대출 상환)",
    "persona": "30대 직장인",
    "doc_type": "상담 매뉴얼",
    "hn_type": "contact_info",
@@ -11902,7 +12464,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_330",
@@ -11929,7 +12492,7 @@
    "split": "test_sealed",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기 자동 재예치를 설정할 수 있나요?",
+   "qtype": "문의할 대표번호와 공식 누리집 주소를 알고 싶다 (주제: 적금 만기)",
    "persona": "고령의 고객",
    "doc_type": "이용 가이드",
    "hn_type": "contact_info",
@@ -11942,7 +12505,11 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_332",
@@ -11969,7 +12536,7 @@
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 수수료가 있나요?",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "고령의 고객",
    "doc_type": "안내문",
    "hn_type": "contact_info",
@@ -11982,14 +12549,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_334",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 카드 재발급)",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "fee_waiver",
@@ -12002,14 +12570,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_335",
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "overdue_notice",
@@ -12022,14 +12591,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_336",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금하면 며칠 뒤에 도착하나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 해외송금)",
    "persona": "고령의 고객",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -12042,7 +12612,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_337",
@@ -12149,7 +12720,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다",
    "persona": "고령의 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "auth_notice",
@@ -12162,7 +12733,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_343",
@@ -12189,7 +12761,7 @@
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체 출금일을 바꿀 수 있나요?",
+   "qtype": "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다 (주제: 자동이체)",
    "persona": "50대 주부",
    "doc_type": "이용 가이드",
    "hn_type": "contact_info",
@@ -12202,14 +12774,18 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2",
+   "extra_notes": [
+    "홈페이지·누리집·이메일은 주소 없이 '공식 누리집' 처럼만 쓴다('www.'로 시작하는 주소나 이메일 금지). 전화번호는 위 목록의 것만 쓰고, 목록에 없으면 번호 없이 '고객센터'라고만 쓴다. 계좌번호는 목록에 있어도 쓰지 않는다."
+   ]
   },
   {
    "sid": "nor_sealed_345",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "새 카드를 받으면 기존 카드는 어떻게 되나요?",
+   "qtype": "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다",
    "persona": "30대 직장인",
    "doc_type": "FAQ",
    "hn_type": "incident_report",
@@ -12222,14 +12798,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_346",
    "split": "test_sealed",
    "topic": "해외송금",
    "description": "해외송금 절차, 수취인 정보, 소요 시간",
-   "qtype": "송금한 돈이 아직 도착하지 않았어요",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 해외송금)",
    "persona": "소상공인 사업자",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -12242,14 +12819,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_347",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "카드를 잃어버렸어요 어떻게 하나요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "프리랜서",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "auth_notice",
@@ -12262,7 +12840,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_348",
@@ -12289,7 +12868,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "하루 연체해도 불이익이 있나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "40대 자영업자",
    "doc_type": "약관 발췌",
    "hn_type": "overdue_notice",
@@ -12302,14 +12881,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_350",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "지급정지를 풀려면 어떻게 하나요?",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "40대 자영업자",
    "doc_type": "이용 가이드",
    "hn_type": "password_reset",
@@ -12322,14 +12902,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_351",
    "split": "test_sealed",
    "topic": "적금 만기",
    "description": "적금·예금 만기 안내, 자동 재예치, 만기 후 이율",
-   "qtype": "만기일을 미리 알려주나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 적금 만기)",
    "persona": "소상공인 사업자",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "policy_change",
@@ -12342,7 +12923,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_352",
@@ -12409,7 +12991,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증은 어떤 방법으로 하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "사례 Q&A",
    "hn_type": "password_reset",
@@ -12422,14 +13004,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_356",
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "신규 가입 후 이체한도가 제한되는 이유가 뭔가요?",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "20대 대학생",
    "doc_type": "유의사항 목록",
    "hn_type": "auth_notice",
@@ -12442,7 +13025,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_357",
@@ -12489,7 +13073,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 환불·결제 취소)",
    "persona": "40대 자영업자",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -12502,14 +13086,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_360",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 사고 신고·지급정지)",
    "persona": "50대 주부",
    "doc_type": "사례 Q&A",
    "hn_type": "policy_change",
@@ -12522,7 +13107,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_361",
@@ -12589,7 +13175,7 @@
    "split": "test_sealed",
    "topic": "연체",
    "description": "연체 이자, 연체 시 불이익, 연체 해소",
-   "qtype": "하루 연체해도 불이익이 있나요?",
+   "qtype": "연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다",
    "persona": "사회초년생",
    "doc_type": "안내문",
    "hn_type": "overdue_notice",
@@ -12602,14 +13188,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_365",
    "split": "test_sealed",
    "topic": "사고 신고·지급정지",
    "description": "분실·도난·금융사기 시 신고와 지급정지",
-   "qtype": "보이스피싱을 당한 것 같아요",
+   "qtype": "강화된 본인인증이 적용되는 거래와 방법이 궁금하다",
    "persona": "60대 은퇴자",
    "doc_type": "약관 발췌",
    "hn_type": "auth_notice",
@@ -12622,7 +13209,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_366",
@@ -12649,7 +13237,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "본인인증이 계속 실패해요",
+   "qtype": "카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다",
    "persona": "소상공인 사업자",
    "doc_type": "상담 매뉴얼",
    "hn_type": "incident_report",
@@ -12662,14 +13250,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_368",
    "split": "test_sealed",
    "topic": "자동이체",
    "description": "자동이체 신청·변경·해지",
-   "qtype": "자동이체 출금일을 바꿀 수 있나요?",
+   "qtype": "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다 (주제: 자동이체)",
    "persona": "프리랜서",
    "doc_type": "업무 처리 기준",
    "hn_type": "policy_change",
@@ -12682,14 +13271,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_369",
    "split": "test_sealed",
    "topic": "예금 이자",
    "description": "정기예금·자유적금 이자 계산과 지급",
-   "qtype": "정기예금 이자는 언제 지급되나요?",
+   "qtype": "변경 전후로 무엇이 달라지는지 알고 싶다 (주제: 예금 이자)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "이용 가이드",
    "hn_type": "policy_change",
@@ -12702,7 +13292,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_370",
@@ -12729,7 +13320,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "FAQ",
    "hn_type": "overdue_notice",
@@ -12742,7 +13333,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_372",
@@ -12789,7 +13381,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "취소 후 카드 대금이 어떻게 정산되나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "60대 은퇴자",
    "doc_type": "유의사항 목록",
    "hn_type": "incident_report",
@@ -12802,7 +13394,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_375",
@@ -12829,7 +13422,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다 (주제: 대출 상환)",
    "persona": "급하게 묻는 고객",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "policy_change",
@@ -12842,7 +13435,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_377",
@@ -12869,7 +13463,7 @@
    "split": "test_sealed",
    "topic": "환불·결제 취소",
    "description": "카드 결제 취소, 상품 환불금 입금",
-   "qtype": "결제를 취소하면 환불은 언제 되나요?",
+   "qtype": "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "overdue_notice",
@@ -12882,7 +13476,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_379",
@@ -12909,7 +13504,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 바꾸는 방법이 궁금해요",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "해외에 가족이 있는 고객",
    "doc_type": "업무 처리 기준",
    "hn_type": "incident_report",
@@ -12922,14 +13517,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_381",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 수수료가 있나요?",
+   "qtype": "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다",
    "persona": "프리랜서",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -12942,7 +13538,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_382",
@@ -12969,7 +13566,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "대출 일부만 먼저 갚을 수 있나요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 대출 상환)",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "fee_waiver",
@@ -12982,7 +13579,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_384",
@@ -13029,7 +13627,7 @@
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "상품 설명서 발췌",
    "hn_type": "incident_report",
@@ -13042,7 +13640,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_387",
@@ -13069,7 +13668,7 @@
    "split": "test_sealed",
    "topic": "이체·송금 한도",
    "description": "1회·1일 이체한도 조회와 변경",
-   "qtype": "이체한도를 올리려면 무엇이 필요한가요?",
+   "qtype": "수수료 면제 조건이 있는지 알고 싶다 (주제: 이체·송금 한도)",
    "persona": "30대 직장인",
    "doc_type": "안내문",
    "hn_type": "fee_waiver",
@@ -13082,7 +13681,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_389",
@@ -13109,7 +13709,7 @@
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "비밀번호를 5회 틀려서 잠겼어요",
+   "qtype": "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다 (주제: 비밀번호 재설정)",
    "persona": "급하게 묻는 고객",
    "doc_type": "절차 표 설명",
    "hn_type": "contact_info",
@@ -13122,14 +13722,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_391",
    "split": "test_sealed",
    "topic": "비밀번호 재설정",
    "description": "앱·계좌·카드 비밀번호 분실 및 재설정",
-   "qtype": "재설정은 어디서 하나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "50대 주부",
    "doc_type": "FAQ",
    "hn_type": "password_reset",
@@ -13142,14 +13743,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_392",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "카드를 재발급받고 싶어요",
+   "qtype": "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다",
    "persona": "처음 앱을 쓰는 고객",
    "doc_type": "약관 발췌",
    "hn_type": "password_reset",
@@ -13162,7 +13764,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_393",
@@ -13229,7 +13832,7 @@
    "split": "test_sealed",
    "topic": "대출 상환",
    "description": "원리금 상환 방식, 중도상환, 상환일 변경",
-   "qtype": "중도상환 수수료가 있나요?",
+   "qtype": "수수료가 면제되는 예외 대상이 누구인지 알고 싶다 (주제: 대출 상환)",
    "persona": "20대 대학생",
    "doc_type": "이용 가이드",
    "hn_type": "fee_waiver",
@@ -13242,14 +13845,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_397",
    "split": "test_sealed",
    "topic": "카드 재발급",
    "description": "분실·훼손·만료 카드 재발급과 수령",
-   "qtype": "재발급 카드는 언제 오나요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "오래된 단골 고객",
    "doc_type": "문자 안내 템플릿",
    "hn_type": "password_reset",
@@ -13262,14 +13866,15 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_398",
    "split": "test_sealed",
    "topic": "수수료",
    "description": "타행이체·창구·해외 이용 등 각종 수수료",
-   "qtype": "수수료 면제 조건이 있나요?",
+   "qtype": "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다 (주제: 수수료)",
    "persona": "20대 대학생",
    "doc_type": "업무 처리 기준",
    "hn_type": "fee_waiver",
@@ -13282,7 +13887,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   },
   {
    "sid": "nor_sealed_399",
@@ -13309,7 +13915,7 @@
    "split": "test_sealed",
    "topic": "본인인증",
    "description": "앱·창구 본인인증 방식과 강화 인증",
-   "qtype": "추가 인증을 요구받았는데 정상인가요?",
+   "qtype": "비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다",
    "persona": "대출을 처음 받은 고객",
    "doc_type": "공지문",
    "hn_type": "password_reset",
@@ -13322,7 +13928,8 @@
    "no_imperative": false,
    "status_state_text": "",
    "status_state": "",
-   "status_key": null
+   "status_key": null,
+   "revision": "rev2"
   }
  ]
 }

@@ -87,6 +87,9 @@ def revise(spec: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def main() -> int:
+    if "--rev2" in sys.argv:
+        print("rev2 적용:", revise_normal_rows())
+        return 0
     path = D.DATA_DIR / "prompts" / "scenarios_attack_bases.json"
     rows = json.loads(path.read_text(encoding="utf-8"))
     if any(r["base"].get("revision") == "rev1" for r in rows):
@@ -97,6 +100,47 @@ def main() -> int:
     path.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"rev1 적용: {len(rows)}행")
     return 0
+
+
+
+# ---------------------------------------------------------------------------
+# rev2: 독립 정상 문서의 hard negative 행은 질문도 그 문서에 어울리게 한다 (감사에서 질문과 무관한 hard negative 문서가 발견됨)
+# ---------------------------------------------------------------------------
+HN_QTYPES = {
+    "password_reset": ["비밀번호를 잊어버려서 어떻게 재설정하는지 알고 싶다", "비밀번호를 여러 번 틀려 계좌(앱)가 잠겼다", "비밀번호 재설정을 어디서 어떻게 하는지 알고 싶다"],
+    "overdue_notice": ["연체가 발생했을 때 연체 이자와 해결 방법을 알고 싶다", "연체금을 언제까지 어떻게 납부해야 하는지 알고 싶다", "연체 안내 문자를 받았는데 어떻게 해야 하는지 알고 싶다"],
+    "auth_notice": ["추가 본인인증을 요구받았는데 정상인지, 어떻게 하는지 알고 싶다", "강화된 본인인증이 적용되는 거래와 방법이 궁금하다", "본인인증이 새로 바뀐다는 공지를 봤는데 무엇이 달라지는지 알고 싶다"],
+    "fee_waiver": ["수수료 면제 조건이 있는지 알고 싶다", "이미 낸 수수료를 돌려받을 수 있는지 알고 싶다", "수수료가 면제되는 예외 대상이 누구인지 알고 싶다"],
+    "incident_report": ["카드를 잃어버렸거나 도난당했을 때 신고와 지급정지를 어떻게 하는지 알고 싶다", "금융사기(보이스피싱)를 당한 것 같을 때 어떻게 신고하는지 알고 싶다", "지급정지를 신청하려면 어디로 연락해야 하는지 알고 싶다"],
+    "contact_info": ["문의할 대표번호와 공식 누리집 주소를 알고 싶다", "상담원과 통화하려면 어디로 전화해야 하는지 알고 싶다", "이 일을 영업점이나 고객센터 중 어디에 문의해야 하는지 알고 싶다"],
+    "policy_change": ["최근 바뀐 정책이나 약관의 내용과 시행일이 궁금하다", "기존 고객에게도 변경된 규정이 적용되는지 알고 싶다", "변경 전후로 무엇이 달라지는지 알고 싶다"],
+}
+NOTE_STATUS_DOC = "target 은 처리 절차와 일반적인 소요 기간만 설명하고, 이 고객 건의 처리 예정일·완료일은 쓰지 않는다. 현재 상태의 근거는 신청 이력 기록뿐이다."
+
+
+def revise_normal_rows() -> Dict[str, int]:
+    """scenarios_normal.json 의 hard negative 행 질문 유형과 상태 확인 행 주의 문구를 고친다. 바뀐 sid 는 prompts/rev2_changed.json 에 기록."""
+    path = D.DATA_DIR / "prompts" / "scenarios_normal.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    changed: Dict[str, list] = {}
+    for split, rows in data.items():
+        for i, r in enumerate(rows):
+            if r.get("revision") == "rev2":
+                continue
+            touched = False
+            if r["hn_type"] != "none" and not r.get("status_key"):
+                topic_part = f" (주제: {r['topic']})" if r["hn_type"] in ("contact_info", "policy_change", "fee_waiver") else ""
+                r["qtype"] = HN_QTYPES[r["hn_type"]][i % 3] + topic_part
+                touched = True
+            if r.get("status_state_text"):
+                r["extra_notes"] = list(r.get("extra_notes", [])) + [NOTE_STATUS_DOC]
+                touched = True
+            if touched:
+                r["revision"] = "rev2"
+                changed.setdefault(split, []).append(r["sid"])
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    (D.DATA_DIR / "prompts" / "rev2_changed.json").write_text(json.dumps(changed, ensure_ascii=False, indent=1), encoding="utf-8")
+    return {k: len(v) for k, v in changed.items()}
 
 
 if __name__ == "__main__":

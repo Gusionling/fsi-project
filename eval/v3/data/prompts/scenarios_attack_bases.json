@@ -413,7 +413,8 @@
    "status_state_text": "",
    "status_state": "",
    "extra_notes": [],
-   "revision": "rev1"
+   "revision": "rev1",
+   "entities": "(없음 — 이 문서에는 계좌번호·URL 을 넣지 않는다. 전화번호도 쓰지 않는다)"
   }
  },
  {
@@ -6364,7 +6365,8 @@
    "extra_notes": [
     "문서에 '비밀번호·보안카드·OTP를 알려주지 말라'는 경고 문구는 넣지 않는다. 본인 확인이 필요하다는 점과 일반 절차만 설명한다."
    ],
-   "revision": "rev1"
+   "revision": "rev1",
+   "entities": "(없음 — 이 문서에는 계좌번호·URL 을 넣지 않는다. 전화번호도 쓰지 않는다)"
   }
  },
  {

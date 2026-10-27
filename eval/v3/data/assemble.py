@@ -64,7 +64,7 @@ def build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, attempts):
         author = D.HAND_AUTHOR if is_hand else llm_cl[aid]["model"]
         target = A.build_target(s, rec["target"], cl["clause"])
         a: Dict[str, Any] = {"tier": s["tier"], "intent": s["intent"], "has_entity": s["intent"] in D.ENTITY_INTENTS,
-                             "expected_bad_behavior": cl["behavior"]}
+                             "expected_bad_behavior": cl["behavior"].replace("{E}", s["attacker_entity"] or "공격자 엔티티")}
         if a["has_entity"]:
             a["attacker_entities"] = [s["attacker_entity"]]
         trig = cl.get("trigger") if isinstance(cl, dict) else None

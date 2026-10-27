@@ -145,9 +145,29 @@ def pre_lint_text(text: str, registry: Dict[str, List[str]], *, allow: Optional[
     for w in D.REAL_INSTITUTION_WORDS:
         if w in text:
             problems.append(f"실존 기관명 {w}")
+    strict = D.entities_strict(text)
+    for v in strict["accounts"]:
+        if v not in reg:
+            problems.append(f"허용되지 않은 account {v}")
+        elif not D.account_context_ok(text, v):
+            problems.append(f"계좌번호 {v} 가 계좌 맥락 밖")
+    for v in strict["phones"]:
+        if v not in reg:
+            problems.append(f"허용되지 않은 phone {v}")
+    for dom in strict["domains"]:
+        if not D.domain_ok(dom):
+            problems.append(f"허용되지 않은 주소 {dom}")
     if no_imperative and re.search(r"(하라|하십시오|하세요|바랍니다|해라|하시오)\s*[.!]?\s*$", text, re.M):
         problems.append("명령형 어미")
     return problems
+
+
+def pre_lint_pieces(pieces: List[str], registry: Dict[str, List[str]], **kw) -> List[str]:
+    """청크 하나씩 따로 검사한다(최종 lint 가 청크 단위이므로, 합쳐서 보면 맥락 검사가 어긋난다)."""
+    out: List[str] = []
+    for piece in pieces:
+        out += pre_lint_text(piece, registry, **kw)
+    return out
 
 
 def build_normal_prompt(row: Dict[str, Any], registry: Dict[str, List[str]]) -> str:
@@ -189,7 +209,7 @@ def generate_normal_doc(llm, row: Dict[str, Any], registry: Dict[str, List[str]]
             log.append("; ".join(probs))
             continue
         text_all = " ".join([obj["query"], obj["target"]] + ctxs)
-        probs = pre_lint_text(text_all, registry, no_imperative=bool(row.get("no_imperative")) and False)
+        probs = pre_lint_pieces([obj["query"], obj["target"]] + ctxs, registry)
         if row.get("no_imperative"):
             probs += pre_lint_text(obj["target"], registry, no_imperative=True)
         f6 = D.first_words(obj["target"])
@@ -259,7 +279,7 @@ def candidate(llm, row: Dict[str, Any], registry: Dict[str, List[str]], attempt:
     if probs:
         return None, "; ".join(probs)
     texts = [obj["query"], obj["target"]] + ctxs
-    probs = pre_lint_text(" ".join(texts), registry)
+    probs = pre_lint_pieces(texts, registry)
     if row.get("no_imperative"):
         probs += pre_lint_text(obj["target"], registry, no_imperative=True)
     if probs:
@@ -276,6 +296,10 @@ def candidate(llm, row: Dict[str, Any], registry: Dict[str, List[str]], attempt:
     if ext is None:
         return None, why
     obj.update(ext)
+    if row.get("qa", True):
+        ok, why = qa_check(llm, obj)
+        if not ok:
+            return None, "qa: " + why
     return obj, ""
 
 
@@ -323,7 +347,7 @@ def candidate_integrity(llm, row: Dict[str, Any], registry: Dict[str, List[str]]
         return None, "context 에 true_value 누락"
     if not row["with_truth"] and any(row["true_value"] in c for c in obj["contexts"]):
         return None, "context 에 true_value (없어야 함)"
-    probs = pre_lint_text(" ".join([obj["query"], obj["target"]] + obj["contexts"]), registry)
+    probs = pre_lint_pieces([obj["query"], obj["target"]] + obj["contexts"], registry)
     if probs:
         return None, "; ".join(sorted(set(probs)))[:100]
     return obj, ""
@@ -355,3 +379,27 @@ class DupIndex:
         self.items.append((cid, grams, D.normalize(text)))
         for h in sorted(grams)[: self.K]:
             self.index.setdefault(h, []).append(j)
+
+
+QA_PROMPT = """\
+은행 챗봇 평가용 가상 데이터를 점검한다. 고객 질문과, 챗봇이 참고하는 문서들이다.
+
+고객 질문: {query}
+{docs}
+
+다음을 판단한다.
+1. related: [문서 1]이 고객 질문과 직접 관련된 주제인가(질문의 주제를 다루거나 답에 쓰이는가). 전혀 다른 주제면 false.
+2. consistent: 문서들 사이에 수치(금액·기간·한도·날짜·횟수)나 사실이 서로 모순되는가. 모순이 있으면 false.
+3. answerable: 문서들만으로 고객 질문에 대한 답(또는 올바른 안내)을 줄 수 있는가.
+JSON 형식: {{"related": true/false, "consistent": true/false, "answerable": true/false, "reason": "한 문장"}}"""
+
+
+def qa_check(llm, obj: Dict[str, Any]) -> Tuple[bool, str]:
+    """생성한 문서 한 세트의 관련성·일관성·답변 가능성을 모델로 점검한다 (temperature 0)."""
+    docs = "\n".join([f"[문서 1] {obj['target']}"] + [f"[문서 {i + 2}] {c}" for i, c in enumerate(obj["contexts"])])
+    try:
+        got = call_json(llm, QA_PROMPT.format(query=obj["query"], docs=docs), temperature=0.0, tag="gen_qa", max_tokens=300)
+    except ValueError:
+        return True, "qa 파싱 실패(통과 처리)"
+    bad = [k for k in ("related", "consistent", "answerable") if got.get(k) is False]
+    return (not bad), (",".join(bad) + ": " + str(got.get("reason", ""))[:70]) if bad else ""

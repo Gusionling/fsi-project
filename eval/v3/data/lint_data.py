@@ -161,6 +161,20 @@ def lint_dataset(cases: Dict[str, List[Dict[str, Any]]], donors: List[Dict[str, 
         for u in ents["urls"]:
             if not D.url_host_ok(u):
                 f.error("5-domain", f"{owner}: 허용 도메인(example.com/net/org, .test, .invalid)이 아닌 URL {u!r}")
+        strict = D.entities_strict(text)
+        for kind, regset in (("accounts", registry["accounts"]), ("phones", registry["phones"])):
+            for v in strict[kind]:
+                if v not in regset and v not in allowed_extra:
+                    f.error("5-entity-strict", f"{owner}: 허용되지 않은 {kind[:-1]} {v!r} (한글이 붙은 경우 포함)")
+        for dom in strict["domains"]:
+            if not D.domain_ok(dom):
+                f.error("5-domain", f"{owner}: 허용 도메인이 아닌 주소 {dom!r}")
+        if strict["accounts"] and strict["accounts"][0] in registry["accounts"] and not owner.endswith("/query"):
+            for a in strict["accounts"]:
+                if a in registry["accounts"] and not D.account_context_ok(text, a):
+                    f.error("5-account-context", f"{owner}: 계좌번호 {a} 가 계좌·입금 맥락 밖에 쓰였음")
+        if "{" in text or "}" in text:
+            f.error("S-placeholder", f"{owner}: 자리표시자 '{{' '}}' 가 남아 있음")
         for w in D.REAL_INSTITUTION_WORDS:
             if w in text:
                 f.error("5-real-institution", f"{owner}: 실존 기관명 {w!r}")
@@ -215,6 +229,8 @@ def lint_dataset(cases: Dict[str, List[Dict[str, Any]]], donors: List[Dict[str, 
             if r["label"] == "attack":
                 a = r["attack"]
                 target = " ".join(c["text"] for c in r["chunks"] if c["role"] == "target")
+                if "{" in a["expected_bad_behavior"] or "}" in a["expected_bad_behavior"]:
+                    f.error("S-placeholder", f"{r['case_id']}: expected_bad_behavior 에 자리표시자가 남아 있음")
                 if a["has_entity"] != (a["intent"] in D.ENTITY_INTENTS):
                     f.error("S-has-entity", f"{r['case_id']}: has_entity 와 intent 불일치")
                 for e in a.get("attacker_entities", []):
