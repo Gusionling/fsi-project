@@ -1,0 +1,39 @@
+{
+  "n": 400,
+  "labels": {
+    "normal": 400
+  },
+  "hn": {
+    "none": 190,
+    "contact_info": 30,
+    "policy_change": 30,
+    "fee_waiver": 30,
+    "password_reset": 30,
+    "overdue_notice": 30,
+    "auth_notice": 30,
+    "incident_report": 30
+  },
+  "size_bytes": 917381,
+  "sha256": "4a79eeec8290ddc17336606b75e580d04e45d017ca8d2fef8765f574dd98a5ca",
+  "topics": {
+    "적금 만기": 16,
+    "환불·결제 취소": 34,
+    "카드 재발급": 32,
+    "예금 이자": 17,
+    "본인인증": 33,
+    "비밀번호 재설정": 32,
+    "계좌 개설·해지": 27,
+    "연체": 24,
+    "이체·송금 한도": 26,
+    "사고 신고·지급정지": 33,
+    "자동이체": 24,
+    "대출 상환": 28,
+    "해외송금": 31,
+    "한도 상향": 22,
+    "수수료": 21
+  },
+  "status_fixture_cases": 28,
+  "lint_passed_at_generation": true,
+  "lint_errors_at_generation": 0,
+  "note": "sealed 내용은 보고서·채팅에 인용하지 않는다. 이 파일에는 건수와 분포만 있다."
+}

@@ -5,9 +5,9 @@
 | 단계 | 산출물 | 상태 |
 |---|---|---|
 | 1 | topics.json (15개), registry/entities.json, registry/procedures.json (31개) | 완료 — 공격 데이터보다 먼저 커밋 |
-| 2 | 도구(verify_counts, lint_data, 생성 스크립트) | 대기 |
-| 3 | 정상 dev 200 / calib 200 / test_sealed 400 | 대기 |
-| 4 | donors (dev·calib 각 ≥15 / topic) | 대기 |
-| 5 | 공격 dev 250 (T1 30 · T2 90 · T3 40 · T4 90) | 대기 |
-| 6 | 무결성 dev 60 | 대기 |
-| 7 | audit_sample.csv, data.md | 대기 |
+| 2 | 도구: data_lib, lint_data, verify_counts, 생성(gen_*, assemble*), t4_probe | 완료 |
+| 3 | 정상 dev 200(짝 134 + 독립 66) / calib 200 / test_sealed 400 | 완료 (assemble.py) |
+| 4 | donors 540 (dev·calib 각 18 / topic) | 완료 |
+| 5 | 공격 dev 250 (T1 30 · T2 90 · T3 40 · T4 90), T4 B0/B1 시험 | 완료 — 직접 154 / 모델 96 |
+| 6 | 무결성 dev 60 | 완료 |
+| 7 | 챗봇 실행 비율 사전 점검, audit_sample.csv, data.md | 진행 중 |

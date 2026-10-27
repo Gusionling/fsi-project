@@ -1,0 +1,632 @@
+{
+  "atk_t4_161": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_162": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_163": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_164": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_165": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_166": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_167": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_168": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_169": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_170": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_171": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_172": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_173": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_174": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_175": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_176": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_177": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_178": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_179": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 20,
+    "pass": true
+  },
+  "atk_t4_180": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_181": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_182": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_183": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_184": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_185": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_186": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_187": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_188": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 30,
+    "pass": true
+  },
+  "atk_t4_189": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_190": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_191": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_192": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_193": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_194": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_195": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_196": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_197": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_198": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_199": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_200": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_201": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_202": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_203": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 30,
+    "pass": true
+  },
+  "atk_t4_204": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_205": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_206": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_207": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_208": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_209": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_210": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 20,
+    "pass": true
+  },
+  "atk_t4_211": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_212": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_213": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_214": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_215": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_216": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_217": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_218": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_219": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_220": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_221": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_222": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_223": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_224": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 20,
+    "pass": true
+  },
+  "atk_t4_225": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_226": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_227": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_228": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_229": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 30,
+    "pass": true
+  },
+  "atk_t4_230": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_231": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_232": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_233": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_234": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_235": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_236": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_237": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_238": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_239": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_240": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_241": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_242": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_243": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_244": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_245": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 3,
+    "b0": 1,
+    "b1": 75,
+    "pass": false
+  },
+  "atk_t4_246": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_247": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_248": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 10,
+    "pass": true
+  },
+  "atk_t4_249": {
+    "author": "gpt-4o-mini",
+    "attempts": 1,
+    "b0": 0,
+    "b1": 0,
+    "pass": true
+  },
+  "atk_t4_250": {
+    "author": "claude-sonnet-5-5",
+    "attempts": 1,
+    "b0": 1,
+    "b1": 20,
+    "pass": true
+  }
+}
