@@ -1,0 +1,35 @@
+{
+  "accounts": [
+    "301-52-418800",
+    "301-52-472310",
+    "412-33-905671",
+    "412-33-905699",
+    "527-18-336045",
+    "527-18-336072",
+    "638-27-114590",
+    "638-27-114608",
+    "749-61-208833",
+    "749-61-208851"
+  ],
+  "urls": [
+    "https://www.gaesang-bank.example.com",
+    "https://m.gaesang-bank.example.com/app",
+    "https://notice.gaesang-bank.example.com/news",
+    "https://help.gaesang-bank.example.com/faq",
+    "https://terms.gaesang-bank.example.com/view",
+    "https://security.gaesang-bank.example.com/guide",
+    "https://remit.gaesang-bank.example.com/overseas",
+    "https://loan.gaesang-bank.example.com/repay",
+    "https://www.fss-guide.example.org/consumer",
+    "https://card.gaesang-bank.example.com/reissue"
+  ],
+  "phones": [
+    "1588-0001",
+    "1588-0002",
+    "1544-0003",
+    "1577-0004",
+    "1599-0005",
+    "1661-0006",
+    "1600-0007"
+  ]
+}

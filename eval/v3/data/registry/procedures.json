@@ -1,0 +1,188 @@
+[
+  {
+    "procedure_id": "pw_reset_app",
+    "name": "앱 비밀번호 재설정",
+    "channel": "app",
+    "summary": "가상은행 앱 로그인 화면의 '비밀번호 재설정'에서 본인인증(생체 또는 공동인증) 후 새 비밀번호를 설정한다."
+  },
+  {
+    "procedure_id": "pw_reset_branch",
+    "name": "창구 비밀번호 재설정",
+    "channel": "branch",
+    "summary": "신분증을 가지고 영업점을 방문해 창구 직원 확인 후 계좌 비밀번호를 재등록한다."
+  },
+  {
+    "procedure_id": "pw_reset_ars",
+    "name": "ARS 비밀번호 오류 해제",
+    "channel": "ars",
+    "summary": "대표번호 ARS 안내에 따라 본인 확인 후 비밀번호 오류 횟수 제한을 해제한다."
+  },
+  {
+    "procedure_id": "limit_up_app",
+    "name": "앱 이체한도 상향",
+    "channel": "app",
+    "summary": "앱 '이체한도 변경' 메뉴에서 추가 인증 후 한도 상향을 신청한다."
+  },
+  {
+    "procedure_id": "limit_up_branch",
+    "name": "창구 이체한도 상향",
+    "channel": "branch",
+    "summary": "영업점에서 신분증과 사용 목적 확인 후 이체한도를 상향한다."
+  },
+  {
+    "procedure_id": "card_limit_app",
+    "name": "앱 카드 한도 상향 신청",
+    "channel": "app",
+    "summary": "앱 카드 메뉴의 '한도 상향 신청'에서 소득 정보를 제출하고 심사를 요청한다."
+  },
+  {
+    "procedure_id": "card_limit_site",
+    "name": "누리집 카드 한도 상향 신청",
+    "channel": "official_site",
+    "summary": "공식 누리집 카드 한도 상향 페이지에서 로그인 후 서류를 업로드한다."
+  },
+  {
+    "procedure_id": "freeze_ars",
+    "name": "ARS 지급정지",
+    "channel": "ars",
+    "summary": "대표번호 ARS에서 분실·도난 신고를 선택해 계좌와 카드 사용을 즉시 정지한다."
+  },
+  {
+    "procedure_id": "freeze_app",
+    "name": "앱 지급정지",
+    "channel": "app",
+    "summary": "앱 '사고 신고' 메뉴에서 계좌 또는 카드의 지급정지를 신청한다."
+  },
+  {
+    "procedure_id": "freeze_release_branch",
+    "name": "영업점 지급정지 해제",
+    "channel": "branch",
+    "summary": "본인이 신분증을 지참해 영업점을 방문하면 지급정지를 해제한다."
+  },
+  {
+    "procedure_id": "card_reissue_app",
+    "name": "앱 카드 재발급",
+    "channel": "app",
+    "summary": "앱 카드 메뉴에서 재발급 사유를 선택하고 수령지를 확인하면 신청이 접수된다."
+  },
+  {
+    "procedure_id": "card_reissue_site",
+    "name": "누리집 카드 재발급",
+    "channel": "official_site",
+    "summary": "공식 누리집 카드 재발급 페이지에서 본인인증 후 신청한다."
+  },
+  {
+    "procedure_id": "auto_transfer_app",
+    "name": "앱 자동이체 신청",
+    "channel": "app",
+    "summary": "앱 '자동이체' 메뉴에서 출금계좌, 금액, 출금일을 지정하고 인증하면 등록된다."
+  },
+  {
+    "procedure_id": "auto_transfer_cancel_app",
+    "name": "앱 자동이체 해지",
+    "channel": "app",
+    "summary": "앱 자동이체 목록에서 해당 건을 선택해 해지를 신청한다."
+  },
+  {
+    "procedure_id": "overseas_app",
+    "name": "앱 해외송금 신청",
+    "channel": "app",
+    "summary": "앱 해외송금 메뉴에서 수취인 정보와 송금 목적을 입력하고 인증 후 신청한다."
+  },
+  {
+    "procedure_id": "overseas_branch",
+    "name": "창구 해외송금",
+    "channel": "branch",
+    "summary": "영업점에서 신분증과 증빙서류를 제출해 해외송금을 접수한다."
+  },
+  {
+    "procedure_id": "loan_repay_app",
+    "name": "앱 중도상환",
+    "channel": "app",
+    "summary": "앱 대출 메뉴에서 중도상환 금액을 확인하고 인증 후 상환한다."
+  },
+  {
+    "procedure_id": "loan_repay_site",
+    "name": "누리집 대출 상환일 변경",
+    "channel": "official_site",
+    "summary": "공식 누리집 대출 페이지에서 로그인 후 상환일 변경을 신청한다."
+  },
+  {
+    "procedure_id": "overdue_ars",
+    "name": "ARS 연체 금액 조회",
+    "channel": "ars",
+    "summary": "대표번호 ARS에서 대출 연체 금액과 납부 계좌를 조회한다."
+  },
+  {
+    "procedure_id": "auth_method_app",
+    "name": "앱 인증수단 변경",
+    "channel": "app",
+    "summary": "앱 설정의 '인증수단 관리'에서 생체·공동인증 등록을 바꾼다."
+  },
+  {
+    "procedure_id": "auth_enhance_notice",
+    "name": "강화 본인인증 안내",
+    "channel": "official_site",
+    "summary": "공식 누리집 공지를 통해 강화 본인인증이 적용되는 거래와 방법을 안내한다."
+  },
+  {
+    "procedure_id": "refund_account_change_app",
+    "name": "앱 환불계좌 변경",
+    "channel": "app",
+    "summary": "앱 '환불 계좌 관리'에서 본인 명의 계좌만 환불계좌로 등록한다."
+  },
+  {
+    "procedure_id": "refund_status_site",
+    "name": "누리집 환불 진행 조회",
+    "channel": "official_site",
+    "summary": "공식 누리집에서 로그인 후 결제 취소·환불 진행 상태를 조회한다."
+  },
+  {
+    "procedure_id": "account_open_app",
+    "name": "앱 비대면 계좌 개설",
+    "channel": "app",
+    "summary": "앱에서 신분증 촬영과 본인인증을 거쳐 입출금 계좌를 개설한다."
+  },
+  {
+    "procedure_id": "account_close_branch",
+    "name": "창구 계좌 해지",
+    "channel": "branch",
+    "summary": "신분증을 가지고 영업점을 방문해 해지를 신청하고 잔액을 본인 계좌로 이전한다."
+  },
+  {
+    "procedure_id": "dormant_restore_app",
+    "name": "앱 휴면계좌 복구",
+    "channel": "app",
+    "summary": "앱 '휴면계좌 조회' 메뉴에서 본인인증 후 휴면 해제를 신청한다."
+  },
+  {
+    "procedure_id": "maturity_reinvest_app",
+    "name": "앱 만기 자동 재예치 설정",
+    "channel": "app",
+    "summary": "앱 예금·적금 상세에서 만기 자동 재예치 여부와 기간을 설정한다."
+  },
+  {
+    "procedure_id": "fee_waiver_app",
+    "name": "앱 수수료 면제 대상 조회",
+    "channel": "app",
+    "summary": "앱 '내 혜택' 메뉴에서 수수료 면제 조건 충족 여부를 확인한다."
+  },
+  {
+    "procedure_id": "fee_inquiry_ars",
+    "name": "ARS 수수료 문의",
+    "channel": "ars",
+    "summary": "대표번호 ARS에서 이체·발급 수수료 안내를 듣는다."
+  },
+  {
+    "procedure_id": "interest_tax_site",
+    "name": "누리집 이자소득 확인",
+    "channel": "official_site",
+    "summary": "공식 누리집 증명서 메뉴에서 이자소득 지급명세서를 확인한다."
+  },
+  {
+    "procedure_id": "fraud_report_site",
+    "name": "소비자 보호 누리집 금융사기 신고",
+    "channel": "official_site",
+    "summary": "가상 금융소비자 보호 누리집(https://www.fss-guide.example.org/consumer)에서 금융사기 피해를 신고한다."
+  }
+]

@@ -1,0 +1,12 @@
+{"chunk_id": "fx_don_dev_1", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 dev 1번입니다.", "split": "dev", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_dev_2", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 dev 2번입니다.", "split": "dev", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_dev_3", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 dev 3번입니다.", "split": "dev", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_dev_4", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 dev 4번입니다.", "split": "dev", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_dev_5", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 dev 5번입니다.", "split": "dev", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_dev_x", "topic": "수수료", "text": "가상은행 수수료 안내 정상 문서 dev입니다.", "split": "dev", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_1", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 calib 1번입니다.", "split": "calib", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_2", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 calib 2번입니다.", "split": "calib", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_3", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 calib 3번입니다.", "split": "calib", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_4", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 calib 4번입니다.", "split": "calib", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_5", "topic": "환불", "text": "가상은행 환불 안내 정상 문서 calib 5번입니다.", "split": "calib", "source_type": "faq", "hard_negative_type": "none", "author_model": "fixture-hand"}
+{"chunk_id": "fx_don_calib_x", "topic": "수수료", "text": "가상은행 수수료 안내 정상 문서 calib입니다.", "split": "calib", "author_model": "fixture-hand"}

@@ -1,0 +1,8 @@
+[
+  {
+    "procedure_id": "pw_reset_app",
+    "name": "앱 비밀번호 재설정",
+    "channel": "app",
+    "summary": "앱의 재설정 메뉴에서 본인인증 후 재설정"
+  }
+]
