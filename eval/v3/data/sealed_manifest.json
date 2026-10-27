@@ -4,17 +4,17 @@
     "normal": 400
   },
   "hn": {
-    "none": 190,
-    "contact_info": 30,
-    "policy_change": 30,
-    "fee_waiver": 30,
+    "none": 196,
+    "contact_info": 29,
+    "fee_waiver": 29,
     "password_reset": 30,
+    "policy_change": 26,
     "overdue_notice": 30,
     "auth_notice": 30,
     "incident_report": 30
   },
-  "size_bytes": 922311,
-  "sha256": "955f7966262cca359a12b92cda4f7440a978e4fb8119c2abaefad29e4fc805c7",
+  "size_bytes": 922424,
+  "sha256": "aecd2a1d0d3c39806bef3619e0becfd9f640e5d44f4f128b910c34b1cc35a108",
   "topics": {
     "적금 만기": 16,
     "환불·결제 취소": 34,

@@ -34,7 +34,7 @@ def describe(r) -> str:
         + (f' {r["integrity"]["field"]}' if r["label"] == "integrity" else "")
     lines = [f'## {r["case_id"]} [{r["split"]}] {tag}', f'Q: {r["query"]}']
     for c in r["chunks"]:
-        lines.append(f'  [{c["role"]}] {c["text"][:520]}'.replace("\n", " / "))
+        lines.append(f'  [{c["role"]}] {c["text"][:430]}'.replace("\n", " / "))
     if a:
         lines.append(f'  EXPECT: {a["expected_bad_behavior"]} | ents={a.get("attacker_entities")} | trig={a.get("trigger_condition")} | twin={a.get("clean_twin_case_id")}')
         if r.get("trusted_fixture"):

@@ -54,7 +54,8 @@ def normal_case(case_id: str, split: str, rec: Dict[str, Any], generator: str, s
     return out
 
 
-def build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, attempts):
+def build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, attempts, relabel=None):
+    relabel = relabel or {}
     attacks, twins = [], []
     for s in specs:
         aid = s["aid"]
@@ -86,7 +87,8 @@ def build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, attempts):
             case["trusted_fixture"] = {"application_status": {s["status_key"]: s["status_state"]}}
         attacks.append(case)
         if twin_id:
-            twin = normal_case(twin_id, "dev", dict(rec, row=dict(rec["row"], status_key=s["status_key"], status_state=s["status_state"])),
+            twin = normal_case(twin_id, "dev", dict(rec, row=dict(rec["row"], status_key=s["status_key"], status_state=s["status_state"],
+                                                                  hn_type=relabel.get(rec["sid"], rec["row"]["hn_type"]))),
                                f"clean twin of {aid}; gen_bases.py --stage attack_bases; {rec['model']}")
             twins.append(twin)
     return attacks, twins
@@ -102,7 +104,9 @@ def main() -> int:
     if missing:
         print("공격 문구/기반 문서가 없는 행:", missing)
         return 1
-    attacks, twins = build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, None)
+    relabel_path = P / "hn_relabel.json"
+    relabel = D.read_json(relabel_path) if relabel_path.exists() else {}
+    attacks, twins = build_dev_attacks(specs, raw_bases, hand, llm_cl, final_probe, None, relabel)
 
     dev_indep = [normal_case(r["sid"], "dev", r, f"scenarios_normal.json#{r['sid']}; gen_bases.py --stage normal_dev; {r['model']}")
                  for r in D.read_jsonl(RAW / "normal_dev.jsonl")]

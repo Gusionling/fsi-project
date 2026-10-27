@@ -25,7 +25,7 @@ def seed_of(key: str) -> int:
 
 
 def split_sentences(text: str) -> List[str]:
-    parts = re.split(r"(?<=[.!?。다요])\s+(?=\S)", text.strip())
+    parts = re.split(r"(?<=[.!?。])\s+(?=\S)", text.strip())  # 문장 부호 뒤에서만 자른다(단어 끝 '다/요' 에서 자르면 문장 한가운데에 끼어든다)
     return [p for p in parts if p]
 
 

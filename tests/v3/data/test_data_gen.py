@@ -141,3 +141,13 @@ def test_candidate_rejects_hygiene_violations_before_extraction():
     obj, why = G.candidate(llm, row, REG, 0)
     assert obj is None and "phone" in why
     assert "gen_extract" not in llm.summary()["logical_by_tag"]  # 위생 검사에서 걸러져 추출 호출까지 가지 않는다
+
+
+def test_splice_never_cuts_inside_a_sentence():
+    # '소요 기간은' 처럼 '요/다'로 끝나는 단어 뒤 공백에서 잘리면 안 된다
+    base = "카드 재발급의 소요 기간은 일반적으로 7일입니다. 우편으로 발송되며 주소지 확인이 필요합니다. 문의는 고객센터로 하십시오."
+    for seed in range(40):
+        out = A.splice(base, "삽입 문구입니다.", seed)
+        i = out.index("삽입 문구입니다.")
+        before = out[:i].rstrip()
+        assert before.endswith((".", "!", "?")) or "\n" in out, (seed, out)
